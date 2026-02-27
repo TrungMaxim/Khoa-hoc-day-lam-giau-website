@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <!-- Link file CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link icon FontAwesome (Dùng cho icon giỏ hàng) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- === START HEADER === -->
+    <section id="header">
+        <!-- Thay logo.png bằng file logo của nhóm bạn -->
+        <a href="#"><img src="img/logo.png" class="logo" alt="Logo"></a>
+
+        <div>
+            <ul id="navbar">
+                <!-- Menu Items từ PDF Page 1 -->
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- Cart Icon -->
+                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+        
+        <!-- Mobile Menu Icon (Cho phần responsive sau này) -->
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+    <!-- === END HEADER === -->
+
+    <!-- === START HERO SECTION (BANNER) === -->
+    <section id="hero">
+        <!-- Content từ PDF Page 1 -->
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <!-- Nút CTA -->
+        <button>Shop Now</button>
+    </section>
+    <!-- === END HERO SECTION === -->
+
+    <script src="script.js"></script>
+</body>
+</html>
