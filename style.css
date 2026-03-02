@@ -1,5 +1,12 @@
-/* Import Font chữ (Google Fonts - Spartan) cho đẹp giống mẫu */
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* Font viết tay cho Logo */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+    --primary: #088178; /* Màu chủ đạo cũ, có thể đổi sang Đen/Trắng nếu thích Minimalist */
+    --text-dark: #1a1a1a;
+    --bg-light: #f5f5f5;
+}
 
 * {
     margin: 0;
@@ -8,110 +15,238 @@
     font-family: 'Spartan', sans-serif;
 }
 
-/* === CSS HEADER === */
-#header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 80px;
-    background: #E3E6F3;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    z-index: 999;
-    position: sticky; /* Giúp menu dính trên cùng khi cuộn */
-    top: 0;
-    left: 0;
-}
-
-#navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#navbar li {
-    list-style: none;
-    padding: 0 20px;
-    position: relative;
-}
-
-#navbar li a {
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    color: #1a1a1a;
-    transition: 0.3s ease;
-}
-
-#navbar li a:hover,
-#navbar li a.active {
-    color: #088178; /* Màu chủ đạo (Teal/Green) */
-}
-
-/* Hiệu ứng gạch chân khi hover */
-#navbar li a.active::after,
-#navbar li a:hover::after {
-    content: "";
-    width: 30%;
-    height: 2px;
-    background: #088178;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
-}
-
-/* Ẩn menu mobile trên màn hình lớn */
-#mobile {
-    display: none;
-    align-items: center;
-}
-
-/* === CSS HERO SECTION (BANNER) === */
-#hero {
-    /* Thay hero4.png bằng hình nền banner của nhóm bạn */
-    background-image: url("img/hero4.png"); 
-    height: 90vh;
+body {
     width: 100%;
-    background-size: cover;
-    background-position: top 25% right 0;
-    padding: 0 80px;
+}
+
+/* === 1. HEADER SKETCH STYLE === */
+#main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#main-header i {
+    font-size: 24px;
+    color: var(--text-dark);
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.header-left i {
+    margin-left: 0;
+}
+
+/* === 2. BIG LOGO HERO === */
+#big-hero {
+    text-align: center;
+    padding: 60px 20px 40px;
+}
+
+.sketch-logo {
+    font-family: 'Pacifico', cursive; /* Font viết tay */
+    font-size: 80px;
+    color: var(--text-dark);
+    line-height: 1;
+    transform: rotate(-3deg); /* Nghiêng nhẹ giống hình vẽ */
+    margin-bottom: 10px;
+}
+
+.slogan {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #555;
+    text-transform: uppercase;
+}
+
+/* === 3. ABOUT INTRO === */
+#about-intro {
+    text-align: center;
+    padding: 0 20px 40px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#about-intro p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* === 4. RECOMMENDATIONS (SCROLL) === */
+#recommendations {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.section-title {
+    font-family: 'Pacifico', cursive; /* Theo phong cách hình vẽ "Our Books" */
+    font-size: 40px;
+    text-align: right; /* Theo hình vẽ chữ lệch phải */
+    margin-right: 40px;
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    text-align: left;
+    margin-left: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Tạo thanh cuộn ngang (Horizontal Scroll) */
+.book-container {
+    display: flex;
+    overflow-x: auto; /* Cho phép cuộn ngang */
+    gap: 20px;
+    padding: 20px 40px;
+    
+    /* Ẩn thanh cuộn cho đẹp (như App Mobile) */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Ẩn thanh cuộn trên Chrome/Safari/Opera */
+.book-container::-webkit-scrollbar {
+    display: none;
+}
+
+.book-card {
+    min-width: 250px; /* Chiều rộng cố định của mỗi thẻ sách */
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: #fff;
+}
+
+.book-card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.book-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.book-info {
+    text-align: center;
+}
+
+.buy-btn {
+    padding: 8px 15px;
+    background: var(--text-dark);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* === 5. OUR STORY === */
+#our-story {
+    padding: 60px 40px;
+    background: var(--bg-light);
+}
+
+.story-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.story-text {
+    flex: 1;
+    padding-right: 40px;
+    min-width: 300px;
+}
+
+.story-image {
+    flex: 1;
+    text-align: center;
+    min-width: 300px;
+}
+
+.story-image img {
+    width: 200px; /* Kích thước logo ở phần story */
+    height: auto;
+}
+
+/* === 6. NEWSLETTER & FOOTER === */
+#newsletter-sketch {
+    padding: 40px;
+    border-top: 2px solid #000;
+    margin-top: 40px;
+}
+
+.news-box {
+    border: 2px solid #000;
+    border-radius: 30px 10px 30px 10px; /* Bo góc giống hình vẽ */
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form input {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    outline: none;
+}
+
+.form button {
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.sketch-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.sketch-footer .col {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Căn lề trái nội dung */
-    justify-content: center; /* Căn giữa theo chiều dọc */
 }
 
-#hero h4 {
-    padding-bottom: 15px;
+.sketch-footer a {
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 500;
 }
 
-#hero h1 {
-    color: #088178;
-    font-size: 50px;
-}
-
-#hero h2 {
-    font-size: 46px;
-    line-height: 54px;
-    color: #222;
-}
-
-#hero p {
-    font-size: 16px;
-    color: #465b52;
-    margin: 15px 0 20px 0;
-}
-
-/* Style cho nút Shop Now */
-#hero button {
-    background-image: url("img/button.png"); /* Nếu không có ảnh nền nút, dùng background-color */
-    background-color: transparent;
-    color: #088178;
-    border: 0;
-    padding: 14px 80px 14px 65px;
-    background-repeat: no-repeat;
+.sketch-footer .icons i {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
     cursor: pointer;
-    font-weight: 700;
-    font-size: 15px;
-    /* Dự phòng nếu bạn không có ảnh button.png */
-    /* background-color: #e3e6f3; padding: 15px 30px; border-radius: 4px; */ 
+}
+
+/* Responsive cho Mobile */
+@media (max-width: 799px) {
+    .sketch-logo { font-size: 50px; }
+    .story-content { flex-direction: column-reverse; }
+    .story-text { padding-right: 0; padding-top: 20px; }
+    .news-box { flex-direction: column; gap: 20px; text-align: center; }
 }
