@@ -2,54 +2,158 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecommerce Website</title>
-    <!-- Link file CSS -->
+    <title>Our Book Store</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Link icon FontAwesome (Dùng cho icon giỏ hàng) -->
+    <!-- FontAwesome cho Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font chữ viết tay cho Logo (tùy chọn) -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Spartan:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- === START HEADER === -->
-    <section id="header">
-        <!-- Thay logo.png bằng file logo của nhóm bạn -->
-        <a href="#"><img src="img/logo.png" class="logo" alt="Logo"></a>
-
-        <div>
-            <ul id="navbar">
-                <!-- Menu Items từ PDF Page 1 -->
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <!-- Cart Icon -->
-                <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
-            </ul>
+    <!-- === 1. HEADER (Theo Sketch: Menu trái, Icon phải) === -->
+    <header id="main-header">
+        <div class="header-left">
+            <i class="fa-solid fa-bars" id="menu-btn"></i> <!-- Hamburger Menu -->
         </div>
         
-        <!-- Mobile Menu Icon (Cho phần responsive sau này) -->
-        <div id="mobile">
-            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
-            <i id="bar" class="fas fa-outdent"></i>
+        <!-- Nếu muốn Logo nhỏ ở header khi cuộn xuống thì để ở đây, tạm thời ẩn -->
+        
+        <div class="header-right">
+            <a href="#"><i class="fa-regular fa-bell"></i></a> <!-- Noti -->
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a> <!-- Cart -->
+            <a href="#"><i class="fa-regular fa-user"></i></a> <!-- User -->
+        </div>
+    </header>
+
+    <!-- === 2. BIG LOGO SECTION === -->
+    <section id="big-hero">
+        <!-- Thay text này bằng thẻ <img> nếu nhóm có file ảnh logo -->
+        <h1 class="sketch-logo">Name LOGO</h1> 
+        <p class="slogan">Slogan goes here</p>
+    </section>
+
+    <!-- === 3. ABOUT US (INTRO) === -->
+    <section id="about-intro">
+        <div class="container">
+            <h3>Who We Are</h3>
+            <p>
+                Chào mừng bạn đến với cửa hàng sách của chúng tôi. 
+                Đây là nơi tập hợp những đầu sách hay nhất, được tuyển chọn kỹ lưỡng 
+                để mang lại tri thức và niềm vui cho bạn đọc.
+            </p>
         </div>
     </section>
-    <!-- === END HEADER === -->
 
-    <!-- === START HERO SECTION (BANNER) === -->
-    <section id="hero">
-        <!-- Content từ PDF Page 1 -->
-        <h4>Trade-in-offer</h4>
-        <h2>Super value deals</h2>
-        <h1>On all products</h1>
-        <p>Save more with coupons & up to 70% off!</p>
-        <!-- Nút CTA -->
-        <button>Shop Now</button>
+    <!-- === 4. RECOMMENDATIONS (OUR BOOKS - ROTATE) === -->
+    <section id="recommendations">
+        <h2 class="section-title">OUR BOOKS</h2>
+        <p class="section-subtitle">Recommendations</p>
+        
+        <!-- Khung chứa sách có thể lướt ngang -->
+        <div class="book-container">
+            <!-- Book Item 1 -->
+            <div class="book-card" onclick="window.location.href='sproduct.html';">
+                <div class="book-img">
+                    <img src="img/book1.jpg" alt="Book 1"> <!-- Thay ảnh sách vào đây -->
+                </div>
+                <div class="book-info">
+                    <h5>Tên Sách 1</h5>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>$15.00</h4>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Book Item 2 -->
+            <div class="book-card" onclick="window.location.href='sproduct.html';">
+                <div class="book-img"><img src="img/book2.jpg" alt="Book 2"></div>
+                <div class="book-info">
+                    <h5>Tên Sách 2</h5>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <h4>$20.00</h4>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Copy thêm nhiều Book Item nữa vào đây để test scroll -->
+             <div class="book-card">
+                <div class="book-img"><img src="img/book3.jpg" alt="Book 3"></div>
+                <div class="book-info">
+                    <h5>Tên Sách 3</h5>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <h4>$12.00</h4>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+            </div>
+             <div class="book-card">
+                <div class="book-img"><img src="img/book4.jpg" alt="Book 4"></div>
+                <div class="book-info">
+                    <h5>Tên Sách 4</h5>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <h4>$18.00</h4>
+                    <button class="buy-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- === END HERO SECTION === -->
+
+    <!-- === 5. OUR STORY + LOGO WEB === -->
+    <section id="our-story">
+        <div class="story-content">
+            <div class="story-text">
+                <h3>Our Story</h3>
+                <p>
+                    Chúng tôi bắt đầu từ một tiệm sách nhỏ với niềm đam mê lan tỏa văn hóa đọc.
+                    Trải qua hành trình dài, chúng tôi tự hào mang đến trải nghiệm đọc sách tuyệt vời nhất.
+                    <br><br>
+                    Website này là nỗ lực của cả nhóm để kết nối tri thức đến mọi người.
+                </p>
+                <a href="about.html" class="read-more">Read More ></a>
+            </div>
+            <div class="story-image">
+                <!-- Chỗ này để Logo Web như yêu cầu -->
+                <img src="img/logo.png" alt="Web Logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- === 6. NEWSLETTER & FOOTER (Theo Sketch) === -->
+    <section id="newsletter-sketch">
+        <div class="news-box">
+            <h4>Get our new <br> up to date stuff</h4>
+            <form class="form">
+                <input type="text" placeholder="Email">
+                <button>Sign Up</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="sketch-footer">
+        <div class="col">
+            <h4>Support</h4>
+            <a href="#">Contact</a>
+            <a href="#">Shipping</a>
+            <a href="#">T&Cs</a>
+            <a href="#">FAQ</a>
+        </div>
+        <div class="col right">
+            <h4>Follow us on:</h4>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
