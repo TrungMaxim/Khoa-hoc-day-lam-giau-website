@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* Font viết tay cho Logo */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 :root {
-    --primary: #088178; /* Màu chủ đạo cũ, có thể đổi sang Đen/Trắng nếu thích Minimalist */
+    --primary: #088178; 
     --text-dark: #1a1a1a;
     --bg-light: #f5f5f5;
+    --border-color: #cce7d0;
+    --shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
 }
 
+/* === 1. RESET & BASIC STYLES === */
 * {
     margin: 0;
     padding: 0;
@@ -17,9 +19,40 @@
 
 body {
     width: 100%;
+    background-color: #fff;
+    color: var(--text-dark);
 }
 
-/* === 1. HEADER SKETCH STYLE === */
+.section-p1 {
+    padding: 40px 80px;
+}
+
+/* === 2. HEADER (Shared) === */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.header-right a {
+    color: var(--text-dark);
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 #main-header {
     display: flex;
     justify-content: space-between;
@@ -32,376 +65,149 @@ body {
     z-index: 100;
 }
 
-#main-header i {
-    font-size: 24px;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
     color: var(--text-dark);
-    margin-left: 20px;
-    cursor: pointer;
-}
-
-.header-left i {
-    margin-left: 0;
-}
-
-/* === 2. BIG LOGO HERO === */
-#big-hero {
-    text-align: center;
-    padding: 60px 20px 40px;
-}
-
-.sketch-logo {
-    font-family: 'Pacifico', cursive; /* Font viết tay */
-    font-size: 80px;
-    color: var(--text-dark);
-    line-height: 1;
-    transform: rotate(-3deg); /* Nghiêng nhẹ giống hình vẽ */
-    margin-bottom: 10px;
-}
-
-.slogan {
-    font-size: 18px;
-    letter-spacing: 2px;
-    color: #555;
-    text-transform: uppercase;
-}
-
-/* === 3. ABOUT INTRO === */
-#about-intro {
-    text-align: center;
-    padding: 0 20px 40px;
-    max-width: 700px;
-    margin: 0 auto;
-}
-
-#about-intro p {
-    font-size: 16px;
-    color: #666;
-    line-height: 1.6;
-}
-
-/* === 4. RECOMMENDATIONS (SCROLL) === */
-#recommendations {
-    padding: 40px 20px;
-    background-color: #fff;
-}
-
-.section-title {
-    font-family: 'Pacifico', cursive; /* Theo phong cách hình vẽ "Our Books" */
-    font-size: 40px;
-    text-align: right; /* Theo hình vẽ chữ lệch phải */
-    margin-right: 40px;
-    margin-bottom: 5px;
-}
-
-.section-subtitle {
-    text-align: left;
-    margin-left: 40px;
     font-weight: 600;
+}
+
+/* === 3. PRODUCT DETAIL PAGE STYLES === */
+.breadcrumb {
+    margin-bottom: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #888;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.product-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.product-image img {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    object-fit: contain; /* ensure whole image shows without cropping */
+    background-color: #fff; /* in case image aspect ratio differs, show white bars */
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.product-details h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 26px;
+    color: var(--primary);
+    font-weight: 700;
     margin-bottom: 20px;
 }
 
-/* Tạo thanh cuộn ngang (Horizontal Scroll) */
-.book-container {
-    display: flex;
-    overflow-x: auto; /* Cho phép cuộn ngang */
-    gap: 20px;
-    padding: 20px 40px;
-    
-    /* Ẩn thanh cuộn cho đẹp (như App Mobile) */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-}
-
-/* Ẩn thanh cuộn trên Chrome/Safari/Opera */
-.book-container::-webkit-scrollbar {
-    display: none;
-}
-
-.book-card {
-    min-width: 250px; /* Chiều rộng cố định của mỗi thẻ sách */
-    border: 1px solid #e0e0e0;
-    border-radius: 15px;
-    padding: 10px;
-    cursor: pointer;
-    transition: 0.3s;
-    background: #fff;
-}
-
-.book-card:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-}
-
-.book-img img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.book-info {
-    text-align: center;
-}
-
-.buy-btn {
-    padding: 8px 15px;
-    background: var(--text-dark);
-    color: #fff;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-/* === 5. OUR STORY === */
-#our-story {
-    padding: 60px 40px;
-    background: var(--bg-light);
-}
-
-.story-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-    flex-wrap: wrap;
-}
-
-.story-text {
-    flex: 1;
-    padding-right: 40px;
-    min-width: 300px;
-}
-
-.story-image {
-    flex: 1;
-    text-align: center;
-    min-width: 300px;
-}
-
-.story-image img {
-    width: 200px; /* Kích thước logo ở phần story */
-    height: auto;
-}
-
-/* === 6. NEWSLETTER & FOOTER === */
-#newsletter-sketch {
-    padding: 40px;
-    border-top: 2px solid #000;
-    margin-top: 40px;
-}
-
-.news-box {
-    border: 2px solid #000;
-    border-radius: 30px 10px 30px 10px; /* Bo góc giống hình vẽ */
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.form input {
-    padding: 10px;
-    border: 1px solid #000;
-    border-radius: 20px;
+.quantity {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    margin-right: 10px;
     outline: none;
 }
 
-.form button {
-    padding: 10px 20px;
-    background: #000;
-    color: #fff;
-    border-radius: 20px;
+.add-to-cart {
+    padding: 14px 30px;
+    background-color: var(--primary);
+    color: white;
     border: none;
+    border-radius: 4px;
+    font-weight: 700;
     cursor: pointer;
+    transition: 0.3s ease;
 }
 
+.add-to-cart:hover {
+    background-color: #06665f;
+}
+
+.description h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+/* === 4. RELATED PRODUCTS (Grid Style) === */
+.related-products h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-card {
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 25px; 
+    text-align: center;
+    background: #fff;
+    transition: 0.2s ease;
+    box-shadow: var(--shadow);
+}
+
+.product-card:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+.product-card img {
+    display: none; /* hide images in related products */
+}
+
+.product-card p {
+    color: var(--primary); /* green for product names */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-card span {
+    color: var(--text-dark); /* dark for prices */
+}
+
+.product-card a {
+    text-decoration: none;
+}
+
+/* === 5. FOOTER & OTHERS (From Sketch) === */
 .sketch-footer {
     display: flex;
     justify-content: space-between;
     padding: 40px;
+    border-top: 1px solid #eee;
 }
 
-.sketch-footer .col {
-    display: flex;
-    flex-direction: column;
-}
-
-.sketch-footer a {
-    text-decoration: none;
-    color: #333;
-    margin-bottom: 10px;
-    font-weight: 500;
-}
-
-.sketch-footer .icons i {
-    font-size: 20px;
-    margin-right: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-/* Responsive cho Mobile */
+/* Responsive */
 @media (max-width: 799px) {
-    .sketch-logo { font-size: 50px; }
-    .story-content { flex-direction: column-reverse; }
-    .story-text { padding-right: 0; padding-top: 20px; }
-    .news-box { flex-direction: column; gap: 20px; text-align: center; }
-}
-
-/* === Class dùng chung cho padding các section === */
-.section-p1 {
-    padding: 40px 80px;
-}
-
-/* === FEATURE SECTION === */
-#feature {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#feature .fe-box {
-    width: 180px;
-    text-align: center;
-    padding: 25px 15px;
-    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
-    border: 1px solid #cce7d0;
-    border-radius: 4px;
-    margin: 15px 0;
-    transition: 0.3s ease;
-}
-
-#feature .fe-box:hover {
-    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
-}
-
-#feature .fe-box img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
-#feature .fe-box h6 {
-    display: inline-block;
-    padding: 9px 8px 6px 8px;
-    line-height: 1;
-    border-radius: 4px;
-    color: #088178;
-    background-color: #fddde4;
-}
-
-/* Chỉnh màu riêng cho từng ô feature */
-#feature .fe-box:nth-child(2) h6 { background-color: #cdebbc; }
-#feature .fe-box:nth-child(3) h6 { background-color: #d1e8f2; }
-#feature .fe-box:nth-child(4) h6 { background-color: #cdd4f8; }
-#feature .fe-box:nth-child(5) h6 { background-color: #f6dbf6; }
-#feature .fe-box:nth-child(6) h6 { background-color: #fff2e5; }
-
-/* === PRODUCT SECTION === */
-#product1 {
-    text-align: center;
-}
-
-#product1 h2 {
-    font-family: 'Pacifico', cursive;
-    font-size: 40px;
-    margin-bottom: 10px;
-}
-
-#product1 p {
-    color: #666;
-    margin-bottom: 20px;
-}
-
-#product1 .pro-container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    flex-wrap: wrap;
-}
-
-#product1 .pro {
-    width: 23%;
-    min-width: 250px;
-    padding: 10px 12px;
-    border: 1px solid #cce7d0;
-    border-radius: 25px;
-    cursor: pointer;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
-    margin: 15px 0;
-    transition: 0.2s ease;
-    position: relative;
-}
-
-#product1 .pro:hover {
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
-}
-
-#product1 .pro img {
-    width: 100%;
-    border-radius: 20px;
-}
-
-#product1 .pro .des {
-    text-align: start;
-    padding: 10px 0;
-}
-
-#product1 .pro .des span {
-    color: #606063;
-    font-size: 12px;
-}
-
-#product1 .pro .des h5 {
-    padding-top: 7px;
-    color: #1a1a1a;
-    font-size: 16px;
-}
-
-#product1 .pro .des i {
-    font-size: 12px;
-    color: rgb(243, 181, 25);
-}
-
-#product1 .pro .des h4 {
-    padding-top: 7px;
-    font-size: 15px;
-    font-weight: 700;
-    color: #088178;
-}
-
-#product1 .pro .cart {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    border-radius: 50px;
-    background-color: #e8f6ea;
-    font-weight: 500;
-    color: #088178;
-    border: 1px solid #cce7d0;
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-}
-
-/* Responsive cho màn hình Tablet/Mobile */
-@media (max-width: 799px) {
-    .section-p1 {
-        padding: 40px 40px;
-    }
-    #feature {
-        justify-content: center;
-    }
-    #feature .fe-box {
-        margin: 15px 15px;
-    }
-    #product1 .pro-container {
-        justify-content: center;
-    }
-    #product1 .pro {
-        margin: 15px;
-    }
+    .section-p1 { padding: 40px; }
+    .product-display { grid-template-columns: 1fr; }
+    .product-card { width: 100%; }
 }
