@@ -93,7 +93,7 @@ header {
 .product-display {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    gap: 40px; /* slightly reduced so the image is closer to the details */
     margin-bottom: 60px;
 }
 
@@ -210,4 +210,9 @@ header {
     .section-p1 { padding: 40px; }
     .product-display { grid-template-columns: 1fr; }
     .product-card { width: 100%; }
+}
+
+/* padding on the main container gives space from left/right viewport edges */
+.container {
+    padding: 0 20px;
 }

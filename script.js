@@ -4,106 +4,106 @@ const products = {
         id: 1,
         name: "Bí mật làm giàu của các tỷ phú",
         price: 599,
-        image: "1.png",
+        image: "image-product/1.png",
         description: "Khám phá những chiến lược đầu tư, tư duy tài chính và thói quen bí mật đã giúp nhiều tỷ phú xây dựng khối tài sản khổng lồ."
     },
     2: {
         id: 2,
         name: "Thiên văn học và các làm giàu bí ẩn",
         price: 649,
-        image: "2.png",
+        image: "image-product/2.png",
         description: "Cuốn sách bán chạy nhất và chuyên môn nhất về việc kết hợp chiêm tinh học và làm ăn hợp pháp."
     },
     3: {
         id: 3,
         name: "Sổ tay về cách giao tiếp với người giàu ft. Xuân Tóc Đỏ",
         price: 399,
-        image: "https://via.placeholder.com/400x500",
-        description: "Chiếc áo Polo Shirt tinh tế với chất liệu premium, phù hợp cho cả những buổi casual lẫn semi-formal."
+        image: "image-product/3.png",
+        description: "Một quyển sổ tay nhỏ giúp mọi người biết cách hòa nhập với giới thượng lưu"
     },
     4: {
         id: 4,
         name: "Giàu không khó khi ta chịu khó",
         price: 367,
-        image: "4.png",
-        description: "Áo V-Neck T-Shirt với form dáng thanh lịch và thoải mái. Lựa chọn tốt cho những dịp hàng ngày hoặc đi ra ngoài."
+        image: "image-product/4.png",
+        description: "Một quyển sách self-help cho những người đang gặp khó khăn tài chính."
     },
     5: {
         id: 5,
         name: "Thói quen hằng ngày của giới tài phiệt",
         price: 499,
-        image: "5.png",
-        description: "Áo thun sọc với thiết kế hiện đại và màu sắc bắt mắt. Chất liệu cotton mềm mại, phù hợp với mọi lứa tuổi."
+        image: "image-product/5.png",
+        description: "Từ cách quản lý thời gian, đọc sách đến suy nghĩ chiến lược, những thói quen đã giúp nhiều người thành công."
     },
     6: {
         id: 6,
         name: "Mở rộng đời sống vật chất như mở rộng ví tiền",
         price: 799,
-        image: "6.png",
-        description: "Chiếc áo Henley cổ điển với nút cài trên ngực. Thoải mái và phong cách, hoàn hảo cho những dịp bình thường."
+        image: "image-product/6.png",
+        description: "Hướng dẫn cách phát triển tư duy tài chính và tạo nhiều nguồn thu nhập để nâng cao chất lượng cuộc sống."
     },
     7: {
         id: 7,
         name: "Tết này con bận đi làm",
         price: 199,
-        image: "7.png",
-        description: "Áo tay dài từ chất liệu cotton chất lượng cao. Thích hợp cho mùa thu đông hoặc những ai thích style tay dài."
+        image: "image-product/7.png",
+        description: "Một câu chuyện ngắn về một tỷ phú tương lai thay vì về quê thì về công ty làm thêm giờ."
     },
     8: {
         id: 8,
         name: "Mặt dày nhưng ví cũng dày",
         price: 799,
-        image: "8.png",
-        description: "Áo thun cổ tròn kinh điển với phom dáng năng động. Lựa chọn an toàn và thời trang cho mọi mùa."
+        image: "image-product/8.png",
+        description: "Một quyển sách dành riêng cho những người sống cô độc nhưng muốn chứng minh cho cả thế giới thấy rằng mình vẫn có khả năng độc lập tài chính."
     },
     9: {
         id: 9,
         name: "(LIMITED EDITION) Từ điển bách khoa dành riêng cho giới tài phiệt",
         price: 1499,
-        image: "9.png",
-        description: "Áo sơ mi Oxford với chất vải bền và bóng mịn. Lý tưởng cho những buổi làm việc hoặc dự tiệc."
+        image: "image-product/9.png",
+        description: "Ấn bản giới hạn tổng hợp các thuật ngữ, chiến lược đầu tư, tư duy kinh doanh và câu chuyện của những người giàu có."
     },
     10: {
         id: 10,
         name: "Bắt đầu một chặng đường dài chính là bước đi đầu tiên",
         price: 299,
-        image: "10.png",
-        description: "Áo linen casual với màu sắc nhẹ nhàng. Thích hợp cho những ngày hè nóng bức."
+        image: "image-product/10.png",
+        description: "Cuốn sách dành cho người mới bắt đầu học quản lý tài chính và xây dựng nền tảng kinh tế cá nhân."
     },
     11: {
         id: 11,
         name: "Ánh sáng cuối con đường chính là gì với giới tài phiệt?",
         price: 459,
-        image: "11.png",
-        description: "Áo denim bền chắc với kiểu dáng trendy. Phù hợp phối với quần jeans hoặc khaki."
+        image: "image-product/11.png",
+        description: "Khám phá mục tiêu thật sự của việc làm giàu: tự do tài chính, tầm ảnh hưởng và giá trị để lại cho xã hội."
     },
     12: {
         id: 12,
         name: "Khi tiền trở thành công cụ chứ không phải mục tiêu",
         price: 529,
-        image: "12.png",
-        description: "Áo thun phong cách vintage với thiết kế độc đáo. Tạo điểm nhấn cho outfit hàng ngày."
+        image: "image-product/12.png",
+        description: "Giúp người đọc hiểu cách sử dụng tiền để tạo ra cơ hội, đầu tư cho bản thân và xây dựng tương lai bền vững."
     },
     13: {
         id: 13,
         name: "Những thương vụ thay đổi cuộc đời",
         price: 649,
-        image: "13.png",
-        description: "Áo vừa vặn cơ thể được thiết kế cho những người tập thể dục. Thoáng khí và co giãn tốt."
+        image: "image-product/13.png",
+        description: "Phân tích các thương vụ kinh doanh nổi tiếng và những bài học tài chính đằng sau chúng."
     },
     14: {
         id: 14,
         name: "Tư duy của người giàu: Không phải ai cũng nhìn thấy cơ hội",
         price: 299,
-        image: "14.png",
-        description: "Áo thun oversized với phom dáng thoải mái. Phù hợp với phong cách streetwear hiện đại."
+        image: "image-product/14.png",
+        description: "So sánh sự khác biệt giữa tư duy tài chính của người giàu và người bình thường."
     },
     15: {
         id: 15,
         name: "Con đường đến tự do tài chính",
         price: 399,
-        image: "15.png",
-        description: "Áo thun từ cotton cao cấp với độ mềm mại tuyệt vời. Bền lâu và giữ màu tốt sau nhiều lần giặt."
+        image: "image-product/15.png",
+        description: "Một lộ trình thực tế từ quản lý tiền bạc, đầu tư thông minh đến xây dựng tài sản lâu dài."
     }
 };
 
