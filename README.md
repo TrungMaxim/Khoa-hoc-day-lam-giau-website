@@ -229,10 +229,10 @@ Khoa-hoc-day-lam-giau-website-main/
 ├── Info.docx               # Thông tin dự án
 │
 ├── src/                    # Thư mục assets
-│   ├── image-product/      # 15 ảnh sản phẩm (1.png - 15.png)
-│   ├── features/           # 6 icon features (f1.png - f6.png)
-│   ├── products/           # Ảnh featured products (f1.jpg - f8.jpg)
-│   └── logo/               # Logo website (logo.png)
+│   ├── image-product/      # 15 ảnh sản phẩm (1.png - 15.png) ✅
+│   ├── features/           # 6 icon features (f1.png - f6.png) ❌ Missing
+│   ├── products/           # (Không còn sử dụng) ⚠️
+│   └── logo/               # Logo website (shop-logo.png) ✅
 │
 └── Documentation/
     ├── CART_FEATURES.md    # Tài liệu giỏ hàng
@@ -243,12 +243,12 @@ Khoa-hoc-day-lam-giau-website-main/
 
 ### Trạng Thái Images
 
-| Folder | Status | Files |
-|--------|--------|-------|
-| `src/image-product/` | ✅ **Complete** | 12 files (missing: 7, 8, 12) |
-| `src/features/` | ❌ Needs images | f1.png - f6.png |
-| `src/products/` | ❌ Needs images | f1.jpg - f8.jpg |
-| `src/logo/` | ❌ Needs image | logo.png |
+| Folder | Status | Files | Ghi Chú |
+|--------|--------|-------|---------|
+| `src/image-product/` | ✅ **Complete** | 15/15 files (1.png - 15.png) | Đầy đủ |
+| `src/features/` | ❌ **Missing** | 0/6 files | Cần: f1.png - f6.png |
+| `src/products/` | ⚠️ **Not Used** | Empty | Không còn sử dụng trong HTML |
+| `src/logo/` | ✅ **Complete** | shop-logo.png | Đã có logo |
 
 ---
 
@@ -319,15 +319,18 @@ Khoa-hoc-day-lam-giau-website-main/
 - **Tablet**: 480px - 799px (3-4 columns)
 - **Mobile**: <480px (2 columns)
 
+### Lưu Ý Về Images
+- ✅ **Product images**: Đầy đủ 15/15 files
+- ✅ **Logo**: Đã có `shop-logo.png`
+- ❌ **Feature icons**: Thiếu 6 files (f1.png - f6.png) - website đang hiển thị broken images
+
 ---
 
 ## 🔮 Tính Năng Tương Lai
 
 ### Giai Đoạn 1 (Cơ Bản)
-- [ ] Thêm missing images (7.png, 8.png, 12.png)
-- [ ] Hoàn thiện feature icons (f1.png - f6.png)
-- [ ] Hoàn thiện product images (f1.jpg - f8.jpg)
-- [ ] Thêm logo chính thức
+- [ ] Thêm feature icons (f1.png - f6.png) cho `src/features/`
+- [ ] Xóa folder `src/products/` (không còn sử dụng)
 
 ### Giai Đoạn 2 (Nâng Cao)
 - [ ] Wishlist/favorites functionality
