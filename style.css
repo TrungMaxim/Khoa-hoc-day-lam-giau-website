@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/* Font viết tay cho Logo */
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --primary: #088178; /* Màu chủ đạo cũ, có thể đổi sang Đen/Trắng nếu thích Minimalist */
+    --primary: #088178;
     --text-dark: #1a1a1a;
     --bg-light: #f5f5f5;
     --border-color: #cce7d0;
@@ -21,12 +21,11 @@ body {
     width: 100%;
 }
 
-/* === Class dùng chung cho padding các section === */
 .section-p1 {
     padding: 40px 80px;
 }
 
-/* === 1. HEADER SKETCH STYLE === */
+/* HEADER */
 #main-header {
     display: flex;
     justify-content: space-between;
@@ -84,7 +83,7 @@ body {
     cursor: pointer;
 }
 
-/* === 2. BIG LOGO HERO === */
+/* BIG LOGO HERO */
 #big-hero {
     text-align: center;
     padding: 100px 20px 60px;
@@ -134,7 +133,7 @@ body {
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
 }
 
-/* === 3. ABOUT INTRO === */
+/* ABOUT INTRO */
 #about-intro {
     text-align: center;
     padding: 0 20px 40px;
@@ -154,7 +153,7 @@ body {
     line-height: 1.6;
 }
 
-/* === 4. RECOMMENDATIONS (SCROLL) === */
+/* RECOMMENDATIONS */
 #recommendations {
     padding: 40px 20px;
     background-color: #fff;
@@ -178,16 +177,13 @@ body {
 /* Tạo thanh cuộn ngang (Horizontal Scroll) */
 .book-container {
     display: flex;
-    overflow-x: auto; /* Cho phép cuộn ngang */
+    overflow-x: auto;
     gap: 20px;
     padding: 20px 40px;
-
-    /* Ẩn thanh cuộn cho đẹp (như App Mobile) */
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-/* Ẩn thanh cuộn trên Chrome/Safari/Opera */
 .book-container::-webkit-scrollbar {
     display: none;
 }
@@ -255,7 +251,7 @@ body {
     background: #333;
 }
 
-/* === 5. OUR STORY === */
+/* OUR STORY */
 #our-story {
     padding: 60px 40px;
     background: var(--bg-light);
@@ -315,7 +311,7 @@ body {
     margin: 0 auto;
 }
 
-/* === 6. NEWSLETTER & FOOTER === */
+/* NEWSLETTER & FOOTER */
 #newsletter-sketch {
     padding: 40px;
     border-top: 2px solid #000;
@@ -324,7 +320,7 @@ body {
 
 .news-box {
     border: 2px solid #000;
-    border-radius: 30px 10px 30px 10px; /* Bo góc giống hình vẽ */
+    border-radius: 30px 10px 30px 10px;
     padding: 30px;
     display: flex;
     justify-content: space-between;
@@ -422,7 +418,7 @@ body {
     margin-top: 15px;
 }
 
-/* === FEATURE SECTION === */
+/* FEATURE SECTION */
 #feature {
     display: flex;
     align-items: center;
@@ -466,7 +462,7 @@ body {
 #feature .fe-box:nth-child(5) h6 { background-color: #f6dbf6; }
 #feature .fe-box:nth-child(6) h6 { background-color: #fff2e5; }
 
-/* === PRODUCT SECTION === */
+/* PRODUCT SECTION */
 #product1 {
     text-align: center;
 }
@@ -571,6 +567,131 @@ body {
     position: absolute;
     bottom: 20px;
     right: 10px;
+}
+
+/* === SM BANNER (2 Boxes) === */
+#sm-banner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#sm-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("src/image-product/5.png");
+    min-width: 580px;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+#sm-banner .banner-box2 {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("src/image-product/2.png");
+}
+
+#sm-banner h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sm-banner h2 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sm-banner span {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#sm-banner .white {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: 0.2s;
+}
+
+#sm-banner .banner-box:hover .white {
+    background: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+/* === BANNER 3 (3 Small Boxes) === */
+#banner3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+    gap: 20px;
+}
+
+#banner3 .banner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("src/image-product/9.png");
+    min-width: 30%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#banner3 .banner-box2 {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("src/image-product/10.png");
+}
+
+#banner3 .banner-box3 {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("src/image-product/11.png");
+}
+
+#banner3 h2 {
+    color: #fff;
+    font-weight: 900;
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#banner3 h3 {
+    color: #ff4444;
+    font-weight: 800;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsive for Banners */
+@media (max-width: 1000px) {
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 300px;
+    }
+    #banner3 {
+        padding: 0 40px;
+    }
+    #banner3 .banner-box {
+        min-width: 100%;
+    }
 }
 
 /* Responsive cho Mobile */
@@ -851,9 +972,9 @@ body {
     text-decoration: none;
 }
 
-/* padding on the main container gives space from left/right viewport edges */
+/* CONTAINER */
 .container {
-    padding: 100px 40px 40px; /* Consistent padding with shop-page */
+    padding: 100px 40px 40px;
 }
 
 /* sproduct header style */
@@ -880,17 +1001,12 @@ header {
     }
 }
 
-/* ===========================================
-   === SHOP.HTML PAGE STYLES ===
-   =========================================== */
-
-/* Shop page main container */
+/* SHOP PAGE */
 .shop-page {
     min-height: 100vh;
-    padding: 100px 40px 60px; /* Increased top padding to avoid header overlap */
+    padding: 100px 40px 60px;
 }
 
-/* Shop header with title */
 .shop-header {
     text-align: center;
     padding: 40px 20px;
@@ -1013,13 +1129,10 @@ header {
     align-items: center;
 }
 
-/* ===========================================
-   === CART.HTML PAGE STYLES ===
-   =========================================== */
-
+/* CART PAGE */
 .cart-page {
     min-height: 100vh;
-    padding: 100px 40px 60px; /* Consistent top padding with other pages */
+    padding: 100px 40px 60px;
     background-color: var(--bg-light);
 }
 
@@ -1320,10 +1433,7 @@ header {
     color: var(--text-dark);
 }
 
-/* ===========================================
-   === MOBILE MENU (HAMBURGER) ===
-   =========================================== */
-
+/* MOBILE MENU */
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -1448,10 +1558,7 @@ header {
     color: #fff;
 }
 
-/* ===========================================
-   === ACCOUNT.HTML PAGE STYLES ===
-   =========================================== */
-
+/* ACCOUNT PAGE */
 .account-page {
     min-height: 100vh;
     padding: 100px 40px 60px;
@@ -1932,7 +2039,6 @@ header {
     }
 }
 
-/* Responsive for shop page */
 @media (max-width: 799px) {
     .shop-header {
         padding: 30px 20px;
