@@ -546,7 +546,7 @@ function handleRegister(e) {
         enrolledCourses: []
     };
     localStorage.setItem('currentUser', JSON.stringify(currentUser));
-    showNotification('Đăng ký thành công! Chào mừng ' + name, 'success');
+    showNotification('Đăng ký thành công! Chào mừng ' + name + ' đến với Monro', 'success');
     setTimeout(() => showLoggedInView(), 500);
 }
 
@@ -554,7 +554,7 @@ function handleRegister(e) {
 function continueAsGuest() {
     currentUser = {
         name: 'Khách',
-        email: 'guest@hocviendlamgiau.vn',
+        email: 'guest@monro.edu.vn',
         isGuest: true,
         enrolledCourses: []
     };

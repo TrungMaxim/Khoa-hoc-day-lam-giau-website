@@ -87,16 +87,42 @@ body {
 /* === 2. BIG LOGO HERO === */
 #big-hero {
     text-align: center;
-    padding: 100px 20px 60px; /* Increased top padding to avoid header overlap */
+    padding: 100px 20px 60px;
+    position: relative;
+    overflow: hidden;
+}
+
+.big-hero-content {
+    position: relative;
+    display: inline-block;
+}
+
+.monro-logo-bg {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.15;
+    filter: blur(2px);
+    transition: 0.3s ease;
+}
+
+.big-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
 }
 
 .sketch-logo {
-    font-family: 'Pacifico', cursive; /* Font viết tay */
-    font-size: 80px;
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
     color: var(--text-dark);
     line-height: 1.2;
-    transform: rotate(-3deg); /* Nghiêng nhẹ giống hình vẽ */
-    margin-bottom: 15px;
+    transform: rotate(-3deg);
+    margin-bottom: 35px;  /* Increased from 15px */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
 }
 
 .slogan {
@@ -104,7 +130,8 @@ body {
     letter-spacing: 2px;
     color: #555;
     text-transform: uppercase;
-    margin-top: 10px; /* Added space between logo and slogan */
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
 }
 
 /* === 3. ABOUT INTRO === */
