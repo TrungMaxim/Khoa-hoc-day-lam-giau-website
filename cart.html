@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng - Học Viện Làm Giàu</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome cho Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font chữ viết tay cho Logo (tùy chọn) -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-left">
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <div class="header-center">
+            <h2>Giỏ Hàng</h2>
+        </div>
+        <div class="header-right">
+            <a href="shop.html"><i class="fa-solid fa-graduation-cap" title="Khóa Học"></i></a>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="#"><i class="fa-regular fa-user"></i></a>
+        </div>
+    </header>
+
+    <!-- Cart Content -->
+    <main class="cart-page">
+        <nav class="breadcrumb">
+            <a href="index.html">Trang Chủ</a> / <a href="shop.html">Khóa Học</a> / <span>Giỏ hàng</span>
+        </nav>
+
+        <div class="cart-container">
+            <!-- Cart Items Section -->
+            <div class="cart-items-section">
+                <h2>Giỏ Khóa Học Của Bạn</h2>
+                <div id="cart-items">
+                    <!-- Cart items will be dynamically loaded here -->
+                </div>
+                <div id="empty-cart-message" class="empty-cart">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <p>Giỏ khóa học của bạn đang trống</p>
+                    <a href="shop.html" class="continue-shopping">Khám Phá Khóa Học →</a>
+                </div>
+            </div>
+
+            <!-- Cart Summary Section -->
+            <div class="cart-summary-section">
+                <div class="cart-summary">
+                    <h3>Tổng Đơn Hàng</h3>
+                    <div class="summary-row">
+                        <span>Tạm tính:</span>
+                        <span id="subtotal">0₫</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Phí truy cập:</span>
+                        <span id="shipping">Miễn phí</span>
+                    </div>
+                    <hr>
+                    <div class="summary-row total">
+                        <span>Tổng cộng:</span>
+                        <span id="total">0₫</span>
+                    </div>
+                    <button class="checkout-btn" id="checkout-btn" disabled>
+                        Thanh Toán Ghi Danh
+                    </button>
+                    <div class="trust-badges">
+                        <div class="badge">
+                            <i class="fa-solid fa-lock"></i>
+                            <span>Thanh toán an toàn</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fa-solid fa-rotate-left"></i>
+                            <span>Hoàn tiền trong 7 ngày</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fa-solid fa-infinity"></i>
+                            <span>Truy cập trọn đời</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fa-solid fa-certificate"></i>
+                            <span>Chứng chỉ hoàn thành</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="sketch-footer">
+        <div class="col">
+            <h4>Hỗ Trợ Học Viên</h4>
+            <a href="mailto:support@hocviendlamgiau.vn">Liên Hệ</a>
+            <a href="#">Hướng Dẫn Học Tập</a>
+            <a href="#">Điều Khoản Sử Dụng</a>
+            <a href="#">Câu Hỏi Thường Gặp</a>
+            <a href="#">Chính Sách Bảo Mật</a>
+        </div>
+        <div class="col">
+            <h4>Liên Kết Nhanh</h4>
+            <a href="shop.html">Tất Cả Khóa Học</a>
+            <a href="#">Về Chúng Tôi</a>
+            <a href="#">Blog Làm Giàu</a>
+            <a href="#">Liên Hệ</a>
+            <a href="#">Chứng Chỉ</a>
+        </div>
+        <div class="col">
+            <h4>Thông Tin Liên Hệ</h4>
+            <p>📍 Tầng 15, Tòa nhà Tài Chính, Quận 1, TP.HCM</p>
+            <p>📞 1900 6789</p>
+            <p>✉️ support@hocviendlamgiau.vn</p>
+            <p>🕐 8:00 - 22:00 (Thứ 2 - Chủ Nhật)</p>
+        </div>
+        <div class="col right">
+            <h4>Theo Dõi Chúng Tôi:</h4>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div class="payment-methods">
+                <p style="margin-top: 15px; font-size: 12px; color: #666;">Phương Thức Thanh Toán:</p>
+                <div style="display: flex; gap: 10px; margin-top: 8px;">
+                    <i class="fab fa-cc-visa" style="font-size: 24px; color: #1a1f71;"></i>
+                    <i class="fab fa-cc-mastercard" style="font-size: 24px; color: #eb001b;"></i>
+                    <i class="fab fa-cc-paypal" style="font-size: 24px; color: #003087;"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

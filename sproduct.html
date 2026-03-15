@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Detail - Sản Phẩm Sách</title>
+    <title>Chi Tiết Khóa Học - Học Viện Làm Giàu</title>
     <link rel="stylesheet" href="style.css">
-     <!-- FontAwesome cho Icon -->
+    <!-- FontAwesome cho Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Font chữ viết tay cho Logo (tùy chọn) -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Spartan:wght@400;600;700&display=swap" rel="stylesheet">
@@ -14,40 +14,124 @@
 <body>
 
     <header>
-     <i class="fa-solid fa-bars" id="menu-btn"></i> <!-- Hamburger Menu -->
+        <div class="header-left">
+            <i class="fa-solid fa-bars" id="menu-btn"></i> <!-- Hamburger Menu -->
         </div>
-        
-        <!-- Nếu muốn Logo nhỏ ở header khi cuộn xuống thì để ở đây, tạm thời ẩn -->
-        
+
         <div class="header-right">
-            <a href="#"><i class="fa-regular fa-bell"></i></a> <!-- Noti -->
-            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a> <!-- Cart -->
-            <a href="#"><i class="fa-regular fa-user"></i></a> <!-- User -->
+            <a href="shop.html" title="Shop"><i class="fa-solid fa-store"></i></a>
+            <a href="cart.html" title="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+            <a href="account.html"><i class="fa-regular fa-user"></i></a>
+        </div>
     </header>
+
+    <!-- Mobile Menu -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3>Học Viện Làm Giàu</h3>
+            <button class="close-menu" id="close-menu">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Trang Chủ</span>
+            </a>
+            <a href="shop.html">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Khóa Học</span>
+            </a>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Giỏ Hàng</span>
+            </a>
+            <div class="menu-divider"></div>
+            <a href="account.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Tài Khoản</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Khóa Học Của Tôi</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-certificate"></i>
+                <span>Chứng Chỉ</span>
+            </a>
+            <div class="menu-divider"></div>
+            <a href="#">
+                <i class="fa-solid fa-circle-question"></i>
+                <span>Trợ Giúp</span>
+            </a>
+        </nav>
+        <div class="mobile-menu-footer">
+            <p>© 2026 Học Viện Làm Giàu. All rights reserved.</p>
+            <div class="mobile-menu-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
 
     <main class="container">
         <nav class="breadcrumb">
-            <a href="#">Home</a> / <span>Books</span>
+            <a href="index.html">Trang Chủ</a> / <a href="shop.html">Cửa Hàng</a> / <span id="product-name-breadcrumb">Chi Tiết</span>
         </nav>
 
         <section class="product-display">
             <div class="product-image">
-                <img src="https://via.placeholder.com/400x500" alt="Men's Fashion T-Shirt">
+                <img src="src/image-product/1.png" alt="Khóa Học Image">
             </div>
 
             <div class="product-details">
-                <h1>Sách dạy làm giàu</h1>
-                <p class="price"></p> <!-- JS will insert product price -->
+                <h1>Tên Khóa Học</h1>
+                <p class="price"></p> <!-- JS will insert course price -->
+
+                <div class="course-features">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Truy cập trọn đời</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-laptop"></i>
+                        <span>Học online 24/7</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-certificate"></i>
+                        <span>Chứng chỉ hoàn thành</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-infinity"></i>
+                        <span>Cập nhật miễn phí</span>
+                    </div>
+                </div>
 
                 <div class="purchase-actions">
-                    <input type="number" value="1" min="1" class="quantity">
-                    <button class="add-to-cart">Add To Cart</button>
+                    <input type="number" value="1" min="1" class="quantity" readonly>
+                    <button class="add-to-cart">Ghi Danh Ngay</button>
                 </div>
 
                 <div class="description">
-                    <h3>Mô tả sản phẩm</h3>
-                    <!-- placeholder text will be replaced by JavaScript -->
+                    <h3>Mô Tả Khóa Học</h3>
                     <p></p>
+                </div>
+
+                <div class="course-info">
+                    <h4>Nội Dung Khóa Học</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Video bài giảng chất lượng cao</li>
+                        <li><i class="fa-solid fa-check"></i> Tài liệu học tập downloadable</li>
+                        <li><i class="fa-solid fa-check"></i> Bài tập thực hành sau mỗi chương</li>
+                        <li><i class="fa-solid fa-check"></i> Quiz kiểm tra kiến thức</li>
+                        <li><i class="fa-solid fa-check"></i> Hỗ trợ từ giảng viên</li>
+                        <li><i class="fa-solid fa-check"></i> Cộng đồng học viên</li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -55,116 +139,142 @@
         <hr>
 
         <section class="related-products">
-            <h2>Sản phẩm tương tự</h2>
+            <h2>Khóa Học Liên Quan</h2>
             <div class="product-grid">
-               <div class="product-card">
-                    <a href="sproduct.html?id=2">
-                        <img src="https://via.placeholder.com/150" alt="Book 1">
+                <div class="product-card">
+                    <a href="sproduct.html?id=1">
+                        <img src="src/image-product/1.png" alt="Course 1">
                         <p>Bí mật làm giàu của các tỷ phú</p>
-                        <span>599.000</span>
+                        <span>599.000₫</span>
                     </a>
                 </div>
                 <div class="product-card">
                     <a href="sproduct.html?id=2">
-                        <img src="https://via.placeholder.com/150" alt="Book 2">
+                        <img src="src/image-product/2.png" alt="Course 2">
                         <p>Thiên văn học và các làm giàu bí ẩn</p>
-                        <span>649.000</span>
+                        <span>649.000₫</span>
                     </a>
                 </div>
                 <div class="product-card">
                     <a href="sproduct.html?id=3">
-                        <img src="https://via.placeholder.com/150" alt="Book 3">
-                        <p>“Sổ tay về cách giao tiếp với người giàu ft. Xuân Tóc Đỏ</p>
-                        <span>399.000</span>
+                        <img src="src/image-product/3.png" alt="Course 3">
+                        <p>Sổ tay về cách giao tiếp với người giàu ft. Xuân Tóc Đỏ</p>
+                        <span>399.000₫</span>
                     </a>
                 </div>
                 <div class="product-card">
                     <a href="sproduct.html?id=4">
-                        <img src="https://via.placeholder.com/150" alt="Book 4">
+                        <img src="src/image-product/4.png" alt="Course 4">
                         <p>Giàu không khó khi ta chịu khó</p>
-                        <span>367.000</span>
+                        <span>367.000₫</span>
                     </a>
                 </div>
                 <div class="product-card">
                     <a href="sproduct.html?id=5">
-                        <img src="https://via.placeholder.com/150" alt="Book 5">
+                        <img src="src/image-product/5.png" alt="Course 5">
                         <p>Thói quen hằng ngày của giới tài phiệt</p>
-                        <span>499.000</span>
+                        <span>499.000₫</span>
                     </a>
                 </div>
                 <div class="product-card">
                     <a href="sproduct.html?id=6">
-                        <img src="https://via.placeholder.com/150" alt="Book 6">
+                        <img src="src/image-product/6.png" alt="Course 6">
                         <p>Mở rộng đời sống vật chất như mở rộng ví tiền</p>
-                        <span>799.000</span>
+                        <span>799.000₫</span>
                     </a>
                 </div>
                 <div class="product-card">
                     <a href="sproduct.html?id=7">
-                        <img src="https://via.placeholder.com/150" alt="Book 7">
+                        <img src="src/image-product/7.png" alt="Course 7">
                         <p>Tết này con bận đi làm</p>
-                        <span>199.000</span>
+                        <span>199.000₫</span>
                     </a>
                 </div>
                 <div class="product-card">
                     <a href="sproduct.html?id=8">
-                        <img src="https://via.placeholder.com/150" alt="Book 8">
+                        <img src="src/image-product/8.png" alt="Course 8">
                         <p>Mặt dày nhưng ví cũng dày</p>
-                        <span>799.000</span>
+                        <span>799.000₫</span>
                     </a>
                 </div>
                 <div class="product-card">
                     <a href="sproduct.html?id=9">
-                        <img src="https://via.placeholder.com/150" alt="Book 9">
+                        <img src="src/image-product/9.png" alt="Course 9">
                         <p>(LIMITED EDITION) Từ điển bách khoa dành riêng cho giới tài phiệt</p>
-                        <span>1.499.000</span>
+                        <span>1.499.000₫</span>
                     </a>
                 </div>
                 <div class="product-card">
                     <a href="sproduct.html?id=10">
-                        <img src="https://via.placeholder.com/150" alt="Book 10">
+                        <img src="src/image-product/10.png" alt="Course 10">
                         <p>Bắt đầu một chặng đường dài chính là bước đi đầu tiên</p>
-                        <span>299.000</span>
+                        <span>299.000₫</span>
                     </a>
                 </div>
                 <div class="product-card">
                     <a href="sproduct.html?id=11">
-                        <img src="https://via.placeholder.com/150" alt="Book 11">
+                        <img src="src/image-product/11.png" alt="Course 11">
                         <p>Ánh sáng cuối con đường chính là gì với giới tài phiệt?</p>
-                        <span>459.000</span>
+                        <span>459.000₫</span>
                     </a>
                 </div>
                 <div class="product-card">
                     <a href="sproduct.html?id=12">
-                        <img src="https://via.placeholder.com/150" alt="Book 12">
+                        <img src="src/image-product/12.png" alt="Course 12">
                         <p>Khi tiền trở thành công cụ chứ không phải mục tiêu</p>
-                        <span>529.000</span>
-                    </a>
-                </div>
-                <div class="product-card">
-                    <a href="sproduct.html?id=13">
-                        <img src="https://via.placeholder.com/150" alt="Book 13">
-                        <p>Những thương vụ thay đổi cuộc đời</p>
-                        <span>649.000</span>
-                    </a>
-                </div>
-                <div class="product-card">
-                    <a href="sproduct.html?id=14">
-                        <img src="https://via.placeholder.com/150" alt="Book 14">
-                        <p>Tư duy của người giàu: Không phải ai cũng nhìn thấy cơ hội</p>
-                        <span>299.000</span>
-                    </a>
-                </div>
-                <div class="product-card">
-                    <a href="sproduct.html?id=15">
-                        <img src="https://via.placeholder.com/150" alt="Book 15">
-                        <p>Con đường đến tự do tài chính</p>
-                        <span>399.000</span>
+                        <span>529.000₫</span>
                     </a>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
+    <footer class="sketch-footer">
+        <div class="col">
+            <h4>Hỗ Trợ Học Viên</h4>
+            <a href="mailto:support@hocviendlamgiau.vn">Liên Hệ</a>
+            <a href="#">Hướng Dẫn Học Tập</a>
+            <a href="#">Điều Khoản Sử Dụng</a>
+            <a href="#">Câu Hỏi Thường Gặp</a>
+            <a href="#">Chính Sách Bảo Mật</a>
+        </div>
+        <div class="col">
+            <h4>Liên Kết Nhanh</h4>
+            <a href="shop.html">Tất Cả Khóa Học</a>
+            <a href="#">Về Chúng Tôi</a>
+            <a href="#">Blog Làm Giàu</a>
+            <a href="#">Liên Hệ</a>
+            <a href="#">Chứng Chỉ</a>
+        </div>
+        <div class="col">
+            <h4>Thông Tin Liên Hệ</h4>
+            <p>📍 Tầng 15, Tòa nhà Tài Chính, Quận 1, TP.HCM</p>
+            <p>📞 1900 6789</p>
+            <p>✉️ support@hocviendlamgiau.vn</p>
+            <p>🕐 8:00 - 22:00 (Thứ 2 - Chủ Nhật)</p>
+        </div>
+        <div class="col right">
+            <h4>Theo Dõi Chúng Tôi:</h4>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div class="payment-methods">
+                <p style="margin-top: 15px; font-size: 12px; color: #666;">Phương Thức Thanh Toán:</p>
+                <div style="display: flex; gap: 10px; margin-top: 8px;">
+                    <i class="fab fa-cc-visa" style="font-size: 24px; color: #1a1f71;"></i>
+                    <i class="fab fa-cc-mastercard" style="font-size: 24px; color: #eb001b;"></i>
+                    <i class="fab fa-cc-paypal" style="font-size: 24px; color: #003087;"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

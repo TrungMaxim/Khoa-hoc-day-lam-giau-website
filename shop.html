@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khóa Học - Học Viện Làm Giàu</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome cho Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font chữ viết tay cho Logo (tùy chọn) -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-left">
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <div class="header-center">
+            <h2>Khóa Học</h2>
+        </div>
+        <div class="header-right">
+            <a href="#"><i class="fa-regular fa-bell"></i></a>
+            <a href="cart.html" title="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+            <a href="account.html"><i class="fa-regular fa-user"></i></a>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3>Học Viện Làm Giàu</h3>
+            <button class="close-menu" id="close-menu">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Trang Chủ</span>
+            </a>
+            <a href="shop.html" class="active">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Khóa Học</span>
+            </a>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Giỏ Hàng</span>
+            </a>
+            <div class="menu-divider"></div>
+            <a href="account.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Tài Khoản</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Khóa Học Của Tôi</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-certificate"></i>
+                <span>Chứng Chỉ</span>
+            </a>
+            <div class="menu-divider"></div>
+            <a href="#">
+                <i class="fa-solid fa-circle-question"></i>
+                <span>Trợ Giúp</span>
+            </a>
+        </nav>
+        <div class="mobile-menu-footer">
+            <p>© 2026 Học Viện Làm Giàu. All rights reserved.</p>
+            <div class="mobile-menu-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Shop Content -->
+    <main class="shop-page">
+        <nav class="breadcrumb">
+            <a href="index.html">Trang Chủ</a> / <span>Tất Cả Khóa Học</span>
+        </nav>
+
+        <section class="shop-header">
+            <h1>Tất Cả Khóa Học</h1>
+            <p>Khám phá bộ sưu tập khóa học làm giàu thực chiến</p>
+        </section>
+
+        <!-- All Products Grid -->
+        <section class="shop-products">
+            <div class="products-grid">
+                <!-- Course 1 -->
+                <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=1'">
+                    <div class="product-img">
+                        <img src="src/image-product/1.png" alt="Bí mật làm giàu của các tỷ phú">
+                    </div>
+                    <div class="product-info">
+                        <h5>Bí mật làm giàu của các tỷ phú</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>599.000₫</h4>
+                        <button class="add-cart-btn">Ghi Danh Ngay</button>
+                    </div>
+                </div>
+
+                <!-- Course 2 -->
+                <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=2'">
+                    <div class="product-img">
+                        <img src="src/image-product/2.png" alt="Thiên văn học và các làm giàu bí ẩn">
+                    </div>
+                    <div class="product-info">
+                        <h5>Thiên văn học và các làm giàu bí ẩn</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4>649.000₫</h4>
+                        <button class="add-cart-btn">Ghi Danh Ngay</button>
+                    </div>
+                </div>
+
+                <!-- Course 3 -->
+                <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=3'">
+                    <div class="product-img">
+                        <img src="src/image-product/3.png" alt="Sổ tay về cách giao tiếp với người giàu">
+                    </div>
+                    <div class="product-info">
+                        <h5>Sổ tay về cách giao tiếp với người giàu ft. Xuân Tóc Đỏ</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>399.000₫</h4>
+                        <button class="add-cart-btn">Ghi Danh Ngay</button>
+                    </div>
+                </div>
+
+                <!-- Course 4 -->
+                <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=4'">
+                    <div class="product-img">
+                        <img src="src/image-product/4.png" alt="Giàu không khó khi ta chịu khó">
+                    </div>
+                    <div class="product-info">
+                        <h5>Giàu không khó khi ta chịu khó</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>367.000₫</h4>
+                        <button class="add-cart-btn">Ghi Danh Ngay</button>
+                    </div>
+                </div>
+
+                <!-- Course 5 -->
+                <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=5'">
+                    <div class="product-img">
+                        <img src="src/image-product/5.png" alt="Thói quen hằng ngày của giới tài phiệt">
+                    </div>
+                    <div class="product-info">
+                        <h5>Thói quen hằng ngày của giới tài phiệt</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>499.000₫</h4>
+                        <button class="add-cart-btn">Ghi Danh Ngay</button>
+                    </div>
+                </div>
+
+                <!-- Course 6 -->
+                <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=6'">
+                    <div class="product-img">
+                        <img src="src/image-product/6.png" alt="Mở rộng đời sống vật chất như mở rộng ví tiền">
+                    </div>
+                    <div class="product-info">
+                        <h5>Mở rộng đời sống vật chất như mở rộng ví tiền</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4>799.000₫</h4>
+                        <button class="add-cart-btn">Ghi Danh Ngay</button>
+                    </div>
+                </div>
+
+                <!-- Course 7 -->
+                <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=7'">
+                    <div class="product-img">
+                        <img src="src/image-product/7.png" alt="Tết này con bận đi làm">
+                    </div>
+                    <div class="product-info">
+                        <h5>Tết này con bận đi làm</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>199.000₫</h4>
+                        <button class="add-cart-btn">Ghi Danh Ngay</button>
+                    </div>
+                </div>
+
+                <!-- Course 8 -->
+                <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=8'">
+                    <div class="product-img">
+                        <img src="src/image-product/8.png" alt="Mặt dày nhưng ví cũng dày">
+                    </div>
+                    <div class="product-info">
+                        <h5>Mặt dày nhưng ví cũng dày</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>799.000₫</h4>
+                        <button class="add-cart-btn">Ghi Danh Ngay</button>
+                    </div>
+                </div>
+
+                <!-- Course 9 -->
+                <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=9'">
+                    <div class="product-img">
+                        <img src="src/image-product/9.png" alt="Từ điển bách khoa dành riêng cho giới tài phiệt">
+                    </div>
+                    <div class="product-info">
+                        <h5>(LIMITED EDITION) Từ điển bách khoa dành riêng cho giới tài phiệt</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>1.499.000₫</h4>
+                        <button class="add-cart-btn">Ghi Danh Ngay</button>
+                    </div>
+                </div>
+
+                <!-- Course 10 -->
+                <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=10'">
+                    <div class="product-img">
+                        <img src="src/image-product/10.png" alt="Bắt đầu một chặng đường dài">
+                    </div>
+                    <div class="product-info">
+                        <h5>Bắt đầu một chặng đường dài chính là bước đi đầu tiên</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>299.000₫</h4>
+                        <button class="add-cart-btn">Ghi Danh Ngay</button>
+                    </div>
+                </div>
+
+                <!-- Course 11 -->
+                <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=11'">
+                    <div class="product-img">
+                        <img src="src/image-product/11.png" alt="Ánh sáng cuối con đường">
+                    </div>
+                    <div class="product-info">
+                        <h5>Ánh sáng cuối con đường chính là gì với giới tài phiệt?</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <h4>459.000₫</h4>
+                        <button class="add-cart-btn">Ghi Danh Ngay</button>
+                    </div>
+                </div>
+
+                <!-- Course 12 -->
+                <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=12'">
+                    <div class="product-img">
+                        <img src="src/image-product/12.png" alt="Khi tiền trở thành công cụ">
+                    </div>
+                    <div class="product-info">
+                        <h5>Khi tiền trở thành công cụ chứ không phải mục tiêu</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>529.000₫</h4>
+                        <button class="add-cart-btn">Ghi Danh Ngay</button>
+                    </div>
+                </div>
+
+                <!-- Course 13 -->
+                <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=13'">
+                    <div class="product-img">
+                        <img src="src/image-product/13.png" alt="Những thương vụ thay đổi cuộc đời">
+                    </div>
+                    <div class="product-info">
+                        <h5>Những thương vụ thay đổi cuộc đời</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>649.000₫</h4>
+                        <button class="add-cart-btn">Ghi Danh Ngay</button>
+                    </div>
+                </div>
+
+                <!-- Course 14 -->
+                <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=14'">
+                    <div class="product-img">
+                        <img src="src/image-product/14.png" alt="Tư duy của người giàu">
+                    </div>
+                    <div class="product-info">
+                        <h5>Tư duy của người giàu: Không phải ai cũng nhìn thấy cơ hội</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>299.000₫</h4>
+                        <button class="add-cart-btn">Ghi Danh Ngay</button>
+                    </div>
+                </div>
+
+                <!-- Course 15 -->
+                <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=15'">
+                    <div class="product-img">
+                        <img src="src/image-product/15.png" alt="Con đường đến tự do tài chính">
+                    </div>
+                    <div class="product-info">
+                        <h5>Con đường đến tự do tài chính</h5>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>399.000₫</h4>
+                        <button class="add-cart-btn">Ghi Danh Ngay</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="sketch-footer">
+        <div class="col">
+            <h4>Hỗ Trợ Học Viên</h4>
+            <a href="mailto:support@hocviendlamgiau.vn">Liên Hệ</a>
+            <a href="#">Hướng Dẫn Học Tập</a>
+            <a href="#">Điều Khoản Sử Dụng</a>
+            <a href="#">Câu Hỏi Thường Gặp</a>
+            <a href="#">Chính Sách Bảo Mật</a>
+        </div>
+        <div class="col">
+            <h4>Liên Kết Nhanh</h4>
+            <a href="shop.html">Tất Cả Khóa Học</a>
+            <a href="#">Về Chúng Tôi</a>
+            <a href="#">Blog Làm Giàu</a>
+            <a href="#">Liên Hệ</a>
+            <a href="#">Chứng Chỉ</a>
+        </div>
+        <div class="col">
+            <h4>Thông Tin Liên Hệ</h4>
+            <p>📍 Tầng 15, Tòa nhà Tài Chính, Quận 1, TP.HCM</p>
+            <p>📞 1900 6789</p>
+            <p>✉️ support@hocviendlamgiau.vn</p>
+            <p>🕐 8:00 - 22:00 (Thứ 2 - Chủ Nhật)</p>
+        </div>
+        <div class="col right">
+            <h4>Theo Dõi Chúng Tôi:</h4>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div class="payment-methods">
+                <p style="margin-top: 15px; font-size: 12px; color: #666;">Phương Thức Thanh Toán:</p>
+                <div style="display: flex; gap: 10px; margin-top: 8px;">
+                    <i class="fab fa-cc-visa" style="font-size: 24px; color: #1a1f71;"></i>
+                    <i class="fab fa-cc-mastercard" style="font-size: 24px; color: #eb001b;"></i>
+                    <i class="fab fa-cc-paypal" style="font-size: 24px; color: #003087;"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
