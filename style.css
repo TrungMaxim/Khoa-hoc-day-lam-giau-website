@@ -84,6 +84,26 @@ body {
     cursor: pointer;
 }
 
+/* Hamburger menu button - hidden on desktop by default */
+#menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-dark);
+}
+
+/* Show hamburger menu on mobile */
+@media (max-width: 799px) {
+    #menu-btn {
+        display: block;
+    }
+
+    /* Hide center header text on mobile */
+    #main-header .header-center {
+        display: none;
+    }
+}
+
 /* BIG LOGO HERO */
 #big-hero {
     text-align: center;
@@ -989,6 +1009,32 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+}
+
+/* Hamburger menu for sproduct.html */
+header #menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--text-dark);
+}
+
+@media (max-width: 799px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    header #menu-btn {
+        display: block;
+    }
+
+    header .header-right {
+        gap: 15px;
+    }
+
+    header .header-right i {
+        margin-left: 0;
+    }
 }
 
 /* Responsive for sproduct */
@@ -2085,5 +2131,1200 @@ header {
     .shop-item .add-cart-btn {
         padding: 8px 15px;
         font-size: 12px;
+    }
+}
+
+/* ===========================================
+   === COMPREHENSIVE RESPONSIVE DESIGN ===
+   =========================================== */
+
+/* =========================================
+   TABLET BREAKPOINT (≤799px)
+   ========================================= */
+@media (max-width: 799px) {
+    /* Global spacing adjustments */
+    .section-p1 {
+        padding: 30px 40px;
+    }
+
+    /* Header - Hide desktop nav, show hamburger */
+    #main-header {
+        padding: 15px 20px;
+    }
+
+    #main-header .header-center h2 {
+        font-size: 22px;
+    }
+
+    #main-header i {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+
+    /* Big Hero Section */
+    #big-hero {
+        padding: 60px 20px 40px;
+    }
+
+    .sketch-logo {
+        font-size: 42px;
+        margin-bottom: 20px;
+    }
+
+    .slogan {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .monro-logo-bg {
+        max-width: 350px;
+    }
+
+    /* Feature Section - 3 columns */
+    #feature {
+        justify-content: center;
+        padding: 30px 20px;
+    }
+
+    #feature .fe-box {
+        width: 160px;
+        padding: 20px 12px;
+        margin: 10px;
+    }
+
+    #feature .fe-box img {
+        margin-bottom: 8px;
+    }
+
+    #feature .fe-box h6 {
+        font-size: 13px;
+        padding: 7px 6px;
+    }
+
+    /* About Intro */
+    #about-intro {
+        padding: 0 20px 30px;
+    }
+
+    #about-intro h3 {
+        font-size: 20px;
+    }
+
+    #about-intro p {
+        font-size: 14px;
+    }
+
+    /* Recommendations Section */
+    #recommendations {
+        padding: 30px 20px;
+    }
+
+    .section-title {
+        font-size: 32px;
+        margin-right: 20px;
+        text-align: center;
+    }
+
+    .section-subtitle {
+        text-align: center;
+        margin-left: 0;
+        font-size: 14px;
+    }
+
+    .book-container {
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    .book-card {
+        min-width: 220px;
+    }
+
+    .book-img img {
+        height: 220px;
+    }
+
+    /* Our Story Section */
+    #our-story {
+        padding: 40px 20px;
+    }
+
+    .story-content {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .story-text {
+        padding-right: 0;
+        padding-top: 0;
+        text-align: center;
+    }
+
+    .story-text h3 {
+        font-size: 26px;
+    }
+
+    .story-text p {
+        font-size: 14px;
+    }
+
+    .story-image img {
+        width: 150px;
+    }
+
+    /* Newsletter Section */
+    #newsletter-sketch {
+        padding: 30px 20px;
+    }
+
+    .news-box {
+        padding: 25px;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .news-box h4 {
+        font-size: 16px;
+    }
+
+    .form {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .form input {
+        flex: 1;
+        max-width: 250px;
+    }
+
+    /* Footer */
+    .sketch-footer {
+        padding: 30px 20px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .sketch-footer .col h4 {
+        font-size: 16px;
+    }
+
+    .sketch-footer .col p {
+        font-size: 12px;
+    }
+
+    .sketch-footer .icons i {
+        font-size: 18px;
+    }
+
+    /* SM Banner */
+    #sm-banner {
+        padding: 30px 20px;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 280px;
+    }
+
+    #sm-banner h4 {
+        font-size: 18px;
+    }
+
+    #sm-banner h2 {
+        font-size: 24px;
+    }
+
+    /* Banner 3 */
+    #banner3 {
+        padding: 20px;
+    }
+
+    #banner3 .banner-box {
+        min-width: 100%;
+        height: 180px;
+    }
+
+    #banner3 h2 {
+        font-size: 20px;
+    }
+
+    /* Product Section */
+    #product1 {
+        padding: 30px 20px;
+    }
+
+    #product1 h2 {
+        font-size: 32px;
+    }
+
+    #product1 p {
+        font-size: 14px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    #product1 .pro {
+        width: 45%;
+        min-width: 220px;
+        margin: 10px;
+    }
+
+    /* sproduct.html - Product Display */
+    .product-display {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .product-image img {
+        max-width: 300px;
+        height: 400px;
+    }
+
+    .product-details h1 {
+        font-size: 26px;
+    }
+
+    .price {
+        font-size: 22px;
+    }
+
+    .course-features {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .course-info {
+        padding: 20px;
+    }
+
+    .course-info h4 {
+        font-size: 18px;
+    }
+
+    .course-info ul li {
+        font-size: 14px;
+    }
+
+    /* Related Products */
+    .related-products h2 {
+        font-size: 28px;
+    }
+
+    .product-grid {
+        justify-content: center;
+    }
+
+    .product-card {
+        width: 45%;
+        min-width: 200px;
+    }
+
+    .related-products .product-card img {
+        height: 180px;
+    }
+
+    /* Breadcrumb */
+    .breadcrumb {
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+
+    /* Cart Page */
+    .cart-page {
+        padding: 80px 20px 40px;
+    }
+
+    .cart-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .cart-summary-section {
+        position: static;
+    }
+
+    .cart-item {
+        grid-template-columns: 80px 1fr auto;
+        gap: 15px;
+    }
+
+    .cart-item-quantity,
+    .cart-item-total {
+        grid-column: auto;
+    }
+
+    .remove-item {
+        grid-column: auto;
+    }
+
+    /* Account Page */
+    .account-page {
+        padding: 80px 20px 40px;
+    }
+
+    .auth-options {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .account-logged {
+        grid-template-columns: 1fr;
+    }
+
+    .account-sidebar {
+        position: static;
+    }
+
+    /* Shop Page */
+    .shop-page {
+        padding: 80px 20px 40px;
+    }
+
+    .shop-header h1 {
+        font-size: 32px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 15px;
+    }
+
+    .shop-item .product-img {
+        height: 280px;
+    }
+}
+
+/* =========================================
+   MOBILE BREAKPOINT (≤477px)
+   ========================================= */
+@media (max-width: 477px) {
+    /* Global */
+    * {
+        font-size: 14px;
+    }
+
+    .section-p1 {
+        padding: 20px 15px;
+    }
+
+    /* Header */
+    #main-header {
+        padding: 12px 15px;
+        gap: 10px;
+    }
+
+    #main-header .header-right {
+        gap: 12px;
+    }
+
+    #main-header i {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    #cart-count {
+        width: 16px;
+        height: 16px;
+        font-size: 9px;
+    }
+
+    /* Big Hero */
+    #big-hero {
+        padding: 40px 15px 30px;
+    }
+
+    .monro-logo-bg {
+        max-width: 280px;
+    }
+
+    .sketch-logo {
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .slogan {
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    /* Feature Section - 2 columns */
+    #feature {
+        padding: 20px 15px;
+    }
+
+    #feature .fe-box {
+        width: 45%;
+        min-width: 140px;
+        padding: 15px 10px;
+        margin: 5px;
+    }
+
+    #feature .fe-box img {
+        margin-bottom: 6px;
+    }
+
+    #feature .fe-box h6 {
+        font-size: 11px;
+        padding: 6px 5px;
+    }
+
+    /* About Intro */
+    #about-intro {
+        padding: 0 15px 20px;
+    }
+
+    #about-intro h3 {
+        font-size: 18px;
+    }
+
+    #about-intro p {
+        font-size: 13px;
+    }
+
+    /* Recommendations */
+    #recommendations {
+        padding: 20px 15px;
+    }
+
+    .section-title {
+        font-size: 26px;
+        margin-right: 15px;
+    }
+
+    .section-subtitle {
+        font-size: 12px;
+    }
+
+    .book-container {
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .book-card {
+        min-width: 180px;
+    }
+
+    .book-img img {
+        height: 180px;
+    }
+
+    .book-info h5 {
+        font-size: 12px;
+    }
+
+    .book-info h4 {
+        font-size: 14px;
+    }
+
+    .buy-btn {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+
+    /* Our Story */
+    #our-story {
+        padding: 30px 15px;
+    }
+
+    .story-text h3 {
+        font-size: 22px;
+    }
+
+    .story-text p {
+        font-size: 13px;
+    }
+
+    .story-image img {
+        width: 120px;
+    }
+
+    /* Newsletter */
+    #newsletter-sketch {
+        padding: 20px 15px;
+    }
+
+    .news-box {
+        padding: 20px 15px;
+        border-radius: 20px 10px 20px 10px;
+    }
+
+    .news-box h4 {
+        font-size: 14px;
+    }
+
+    .form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .form input {
+        width: 100%;
+        max-width: none;
+    }
+
+    .form button {
+        width: 100%;
+    }
+
+    /* Footer - Stack columns */
+    .sketch-footer {
+        padding: 25px 15px;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .sketch-footer .col {
+        margin-bottom: 10px;
+    }
+
+    .sketch-footer .col h4 {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+
+    .sketch-footer .col p {
+        font-size: 11px;
+    }
+
+    .sketch-footer .icons {
+        gap: 12px;
+    }
+
+    .sketch-footer .icons i {
+        font-size: 16px;
+    }
+
+    /* SM Banner */
+    #sm-banner {
+        padding: 20px 15px;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 220px;
+        padding: 20px;
+    }
+
+    #sm-banner h4 {
+        font-size: 16px;
+    }
+
+    #sm-banner h2 {
+        font-size: 20px;
+    }
+
+    #sm-banner span {
+        font-size: 12px;
+    }
+
+    /* Banner 3 */
+    #banner3 {
+        padding: 15px;
+    }
+
+    #banner3 .banner-box {
+        min-width: 100%;
+        height: 140px;
+        padding: 15px;
+    }
+
+    #banner3 h2 {
+        font-size: 18px;
+    }
+
+    #banner3 h3 {
+        font-size: 13px;
+    }
+
+    /* Product Section */
+    #product1 {
+        padding: 20px 15px;
+    }
+
+    #product1 h2 {
+        font-size: 26px;
+    }
+
+    #product1 p {
+        font-size: 12px;
+    }
+
+    #product1 .pro-container {
+        padding-top: 10px;
+    }
+
+    #product1 .pro {
+        width: 100%;
+        min-width: auto;
+        margin: 10px 0;
+    }
+
+    #product1 .pro .des h5 {
+        font-size: 14px;
+    }
+
+    #product1 .pro .des h4 {
+        font-size: 14px;
+    }
+
+    #product1 .pro .cart {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        bottom: 15px;
+        right: 8px;
+    }
+
+    /* sproduct.html */
+    .container {
+        padding: 60px 15px 30px;
+    }
+
+    .breadcrumb {
+        font-size: 11px;
+        padding: 8px 15px;
+        flex-wrap: wrap;
+    }
+
+    .product-display {
+        gap: 20px;
+    }
+
+    .product-image img {
+        max-width: 100%;
+        height: 350px;
+    }
+
+    .product-details h1 {
+        font-size: 22px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .purchase-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .quantity {
+        width: 100%;
+    }
+
+    .add-to-cart {
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    .description h3 {
+        font-size: 22px;
+    }
+
+    .description p {
+        font-size: 13px;
+    }
+
+    .course-features {
+        padding: 15px;
+    }
+
+    .course-features .feature-item {
+        font-size: 12px;
+    }
+
+    .course-features .feature-item i {
+        font-size: 16px;
+    }
+
+    .course-info {
+        padding: 15px;
+    }
+
+    .course-info h4 {
+        font-size: 16px;
+    }
+
+    .course-info ul li {
+        font-size: 12px;
+        gap: 8px;
+    }
+
+    /* Related Products */
+    .related-products h2 {
+        font-size: 24px;
+        margin-top: 30px;
+    }
+
+    .product-grid {
+        gap: 10px;
+    }
+
+    .product-card {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .related-products .product-card img {
+        height: 160px;
+    }
+
+    .product-card p {
+        font-size: 12px;
+    }
+
+    .product-card span {
+        font-size: 13px;
+    }
+
+    /* Cart Page */
+    .cart-page {
+        padding: 70px 15px 30px;
+    }
+
+    .cart-container {
+        gap: 15px;
+    }
+
+    .cart-items-section {
+        padding: 20px 15px;
+    }
+
+    .cart-items-section h2 {
+        font-size: 22px;
+    }
+
+    .cart-item {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 10px;
+        padding: 15px 0;
+    }
+
+    .cart-item-image {
+        width: 100%;
+        max-width: 200px;
+        height: 280px;
+        margin: 0 auto;
+    }
+
+    .cart-item-name {
+        font-size: 14px;
+    }
+
+    .cart-item-price {
+        font-size: 12px;
+    }
+
+    .cart-item-quantity {
+        justify-content: center;
+    }
+
+    .cart-item-total {
+        order: -1;
+    }
+
+    .cart-item-total p {
+        font-size: 16px;
+    }
+
+    .remove-item {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Cart Summary */
+    .cart-summary {
+        padding: 20px 15px;
+    }
+
+    .cart-summary h3 {
+        font-size: 18px;
+    }
+
+    .summary-row {
+        font-size: 14px;
+    }
+
+    .summary-row.total {
+        font-size: 16px;
+    }
+
+    .checkout-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .trust-badges .badge {
+        font-size: 11px;
+    }
+
+    .trust-badges .badge i {
+        font-size: 16px;
+    }
+
+    /* Empty Cart */
+    .empty-cart i {
+        font-size: 60px;
+    }
+
+    .empty-cart p {
+        font-size: 14px;
+    }
+
+    .continue-shopping {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    /* Account Page */
+    .account-page {
+        padding: 70px 15px 30px;
+    }
+
+    .account-container {
+        padding: 0;
+    }
+
+    .account-guest {
+        padding: 25px 15px;
+    }
+
+    .guest-header {
+        padding: 30px 0;
+    }
+
+    .guest-header i {
+        font-size: 60px;
+    }
+
+    .guest-header h1 {
+        font-size: 24px;
+    }
+
+    .guest-header p {
+        font-size: 13px;
+    }
+
+    .auth-options {
+        padding: 30px 0;
+        gap: 20px;
+    }
+
+    .auth-card {
+        padding: 20px 15px;
+    }
+
+    .auth-card h3 {
+        font-size: 18px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .form-group input {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .auth-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .guest-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .auth-note {
+        font-size: 11px;
+    }
+
+    /* Benefits */
+    .guest-benefits {
+        padding-top: 30px;
+    }
+
+    .guest-benefits h3 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .benefit-item {
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .benefit-item i {
+        font-size: 26px;
+    }
+
+    .benefit-item h4 {
+        font-size: 14px;
+    }
+
+    .benefit-item p {
+        font-size: 11px;
+    }
+
+    /* Logged In View */
+    .account-logged {
+        gap: 15px;
+    }
+
+    .account-content {
+        padding: 20px 15px;
+    }
+
+    .content-section h2 {
+        font-size: 22px;
+    }
+
+    .empty-state i {
+        font-size: 60px;
+    }
+
+    .empty-state h3 {
+        font-size: 16px;
+    }
+
+    .empty-state p {
+        font-size: 12px;
+    }
+
+    .browse-courses-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .settings-form {
+        max-width: 100%;
+    }
+
+    .save-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+
+    .help-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .help-item {
+        padding: 20px;
+    }
+
+    .help-item i {
+        font-size: 32px;
+    }
+
+    .help-item h4 {
+        font-size: 15px;
+    }
+
+    .help-item p {
+        font-size: 12px;
+    }
+
+    /* User Profile Sidebar */
+    .user-profile h3 {
+        font-size: 16px;
+    }
+
+    .user-profile p {
+        font-size: 11px;
+    }
+
+    .user-avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .user-avatar i {
+        font-size: 48px;
+    }
+
+    .logout-btn {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .account-nav a {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    /* Shop Page */
+    .shop-page {
+        padding: 70px 15px 30px;
+    }
+
+    .shop-header {
+        padding: 25px 15px;
+    }
+
+    .shop-header h1 {
+        font-size: 26px;
+    }
+
+    .shop-header p {
+        font-size: 13px;
+    }
+
+    .shop-products {
+        padding: 15px;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .shop-item .product-img {
+        height: 200px;
+    }
+
+    .shop-item .product-info h5 {
+        font-size: 11px;
+        min-height: 32px;
+    }
+
+    .shop-item .product-info h4 {
+        font-size: 13px;
+    }
+
+    .shop-item .add-cart-btn {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    /* Notification Toast */
+    .notification {
+        top: 70px;
+        right: 15px;
+        left: 15px;
+        padding: 12px 15px;
+    }
+
+    .notification i {
+        font-size: 18px;
+    }
+
+    .notification span {
+        font-size: 12px;
+    }
+
+    /* Mobile Menu Adjustments */
+    .mobile-menu {
+        width: 260px;
+    }
+
+    .mobile-menu-header h3 {
+        font-size: 20px;
+    }
+
+    .mobile-menu-nav a {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+
+    .mobile-menu-nav a i {
+        width: 20px;
+    }
+
+    .mobile-menu-footer p {
+        font-size: 11px;
+    }
+
+    .mobile-menu-social a {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE (≤360px)
+   ========================================= */
+@media (max-width: 360px) {
+    .sketch-logo {
+        font-size: 28px;
+    }
+
+    .slogan {
+        font-size: 10px;
+    }
+
+    .monro-logo-bg {
+        max-width: 240px;
+    }
+
+    #feature .fe-box {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .book-card {
+        min-width: 160px;
+    }
+
+    .book-img img {
+        height: 160px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .shop-item .product-img {
+        height: 180px;
+    }
+}
+
+/* =========================================
+   DESKTOP LARGE (≥1200px)
+   ========================================= */
+@media (min-width: 1200px) {
+    .section-p1 {
+        padding: 60px 80px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    #product1 .pro {
+        width: 22%;
+    }
+
+    .product-grid {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .product-card {
+        width: 22%;
     }
 }
