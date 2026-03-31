@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Monro Học Viện Làm Giàu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Spartan:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-left">
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <div class="header-center">
+            <h2>Blog Làm Giàu</h2>
+        </div>
+        <div class="header-right">
+            <a href="shop.html"><i class="fa-solid fa-graduation-cap" title="Khóa Học"></i></a>
+            <a href="cart.html" title="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+            <a href="account.html"><i class="fa-regular fa-user"></i></a>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3>Monro</h3>
+            <button class="close-menu" id="close-menu">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Trang Chủ</span>
+            </a>
+            <a href="shop.html">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Khóa Học</span>
+            </a>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Giỏ Hàng</span>
+            </a>
+            <div class="menu-divider"></div>
+            <a href="account.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Tài Khoản</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Khóa Học Của Tôi</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-certificate"></i>
+                <span>Chứng Chỉ</span>
+            </a>
+            <div class="menu-divider"></div>
+            <a href="#">
+                <i class="fa-solid fa-circle-question"></i>
+                <span>Trợ Giúp</span>
+            </a>
+        </nav>
+        <div class="mobile-menu-footer">
+            <p>© 2026 Monro. All rights reserved.</p>
+            <div class="mobile-menu-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Content -->
+    <main class="blog-page">
+        <nav class="breadcrumb">
+            <a href="index.html">Trang Chủ</a> / <span>Blog</span>
+        </nav>
+
+        <!-- Blog Hero -->
+        <section class="blog-hero">
+            <h1>Blog Làm Giàu</h1>
+            <p>Chia sẻ kiến thức, kinh nghiệm và câu chuyện về tài chính, kinh doanh và phát triển bản thân</p>
+        </section>
+
+        <!-- Blog Grid -->
+        <section class="blog-grid">
+            <!-- Article 1 - Finance -->
+            <article class="blog-card">
+                <div class="blog-card-img">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-category">Tài Chính</span>
+                    <h3>7 Bước Quản Lý Tài Chính Cá Nhân Hiệu Quả Cho Người Mới Bắt Đầu</h3>
+                    <p class="blog-card-excerpt">
+                        Học cách quản lý thu chi, xây dựng quỹ khẩn cấp và bắt đầu đầu tư với những bước đơn giản nhưng hiệu quả...
+                    </p>
+                    <div class="blog-card-footer">
+                        <span class="blog-date"><i class="fa-regular fa-calendar"></i> 25/03/2026</span>
+                        <a href="#" class="read-more-btn">Đọc Thêm <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 2 - Business -->
+            <article class="blog-card">
+                <div class="blog-card-img">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-category">Kinh Doanh</span>
+                    <h3>Khởi Nghiệp Từ Số 0: Những Bài Học Xương Máu Từ Các Tỷ Phú Tự Thân</h3>
+                    <p class="blog-card-excerpt">
+                        Khám phá những thất bại đầu đời và bài học quý giá từ Jeff Bezos, Elon Musk và các tỷ phú tự thân khác...
+                    </p>
+                    <div class="blog-card-footer">
+                        <span class="blog-date"><i class="fa-regular fa-calendar"></i> 22/03/2026</span>
+                        <a href="#" class="read-more-btn">Đọc Thêm <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 3 - Soft Skills -->
+            <article class="blog-card">
+                <div class="blog-card-img">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-category">Kỹ Năng Mềm</span>
+                    <h3>Nghệ Thuật Giao Tiếp Với Người Giàu: 10 Nguyên Tắc Vàng</h3>
+                    <p class="blog-card-excerpt">
+                        Học cách xây dựng mối quan hệ với giới thượng lưu, từ cách ăn mặc đến ngôn ngữ cơ thể và chủ đề trò chuyện...
+                    </p>
+                    <div class="blog-card-footer">
+                        <span class="blog-date"><i class="fa-regular fa-calendar"></i> 20/03/2026</span>
+                        <a href="#" class="read-more-btn">Đọc Thêm <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 4 - Finance -->
+            <article class="blog-card">
+                <div class="blog-card-img">
+                    <i class="fa-solid fa-coins"></i>
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-category">Tài Chính</span>
+                    <h3>Đầu Tư Chứng Khoán Cho Người Mới: Từ A Đến Z</h3>
+                    <p class="blog-card-excerpt">
+                        Hướng dẫn chi tiết về cách mở tài khoản, phân tích cổ phiếu và xây dựng danh mục đầu tư an toàn...
+                    </p>
+                    <div class="blog-card-footer">
+                        <span class="blog-date"><i class="fa-regular fa-calendar"></i> 18/03/2026</span>
+                        <a href="#" class="read-more-btn">Đọc Thêm <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 5 - Personal Development -->
+            <article class="blog-card">
+                <div class="blog-card-img">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-category">Phát Triển Bản Thân</span>
+                    <h3>10 Thói Quen Buổi Sáng Của Các CEO Thành Công</h3>
+                    <p class="blog-card-excerpt">
+                        Từ thiền định, đọc sách đến tập thể dục - khám phá những thói quen giúp các lãnh đạo duy trì năng lượng...
+                    </p>
+                    <div class="blog-card-footer">
+                        <span class="blog-date"><i class="fa-regular fa-calendar"></i> 15/03/2026</span>
+                        <a href="#" class="read-more-btn">Đọc Thêm <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 6 - Business -->
+            <article class="blog-card">
+                <div class="blog-card-img">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-category">Kinh Doanh</span>
+                    <h3>Xây Dựng Thương Hiệu Cá Nhân: Chìa Khóa Thành Công Thời Đại Số</h3>
+                    <p class="blog-card-excerpt">
+                        Học cách xây dựng và phát triển thương hiệu cá nhân trên mạng xã hội để thu hút cơ hội kinh doanh...
+                    </p>
+                    <div class="blog-card-footer">
+                        <span class="blog-date"><i class="fa-regular fa-calendar"></i> 12/03/2026</span>
+                        <a href="#" class="read-more-btn">Đọc Thêm <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 7 - Finance -->
+            <article class="blog-card">
+                <div class="blog-card-img">
+                    <i class="fa-solid fa-house-chimney"></i>
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-category">Tài Chính</span>
+                    <h3>Đầu Tư Bất Động Sản: 5 Sai Lầm Cần Tránh</h3>
+                    <p class="blog-card-excerpt">
+                        Những sai lầm phổ biến khiến nhà đầu tư mất tiền và cách phòng tránh để có khoản đầu tư an toàn...
+                    </p>
+                    <div class="blog-card-footer">
+                        <span class="blog-date"><i class="fa-regular fa-calendar"></i> 10/03/2026</span>
+                        <a href="#" class="read-more-btn">Đọc Thêm <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 8 - Soft Skills -->
+            <article class="blog-card">
+                <div class="blog-card-img">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-category">Kỹ Năng Mềm</span>
+                    <h3>Kỹ Năng Đàm Phán: Cách Đạt Được Thỏa Thuận Win-Win</h3>
+                    <p class="blog-card-excerpt">
+                        Học các chiến thuật đàm phán hiệu quả từ các chuyên gia và áp dụng vào công việc, cuộc sống...
+                    </p>
+                    <div class="blog-card-footer">
+                        <span class="blog-date"><i class="fa-regular fa-calendar"></i> 08/03/2026</span>
+                        <a href="#" class="read-more-btn">Đọc Thêm <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 9 - Personal Development -->
+            <article class="blog-card">
+                <div class="blog-card-img">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <div class="blog-card-content">
+                    <span class="blog-card-category">Phát Triển Bản Thân</span>
+                    <h3>Tư Duy Tăng Trưởng: Chìa Khóa Vượt Qua Giới Hạn Bản Thân</h3>
+                    <p class="blog-card-excerpt">
+                        Sự khác biệt giữa fixed mindset và growth mindset, và cách rèn luyện tư duy của người thành công...
+                    </p>
+                    <div class="blog-card-footer">
+                        <span class="blog-date"><i class="fa-regular fa-calendar"></i> 05/03/2026</span>
+                        <a href="#" class="read-more-btn">Đọc Thêm <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="sketch-footer">
+        <div class="col">
+            <h4>Hỗ Trợ Học Viên</h4>
+            <a href="mailto:support@monro.edu.vn">Liên Hệ</a>
+            <a href="#">Hướng Dẫn Học Tập</a>
+            <a href="#">Điều Khoản Sử Dụng</a>
+            <a href="#">Câu Hỏi Thường Gặp</a>
+            <a href="#">Chính Sách Bảo Mật</a>
+        </div>
+        <div class="col">
+            <h4>Liên Kết Nhanh</h4>
+            <a href="shop.html">Tất Cả Khóa Học</a>
+            <a href="about.html">Về Chúng Tôi</a>
+            <a href="blog.html">Blog Làm Giàu</a>
+            <a href="contact.html">Liên Hệ</a>
+            <a href="#">Chứng Chỉ</a>
+        </div>
+        <div class="col">
+            <h4>Thông Tin Liên Hệ</h4>
+            <p>📍 Tầng 15, Tòa nhà Tài Chính, Quận 1, TP.HCM</p>
+            <p>📞 1900 6789</p>
+            <p>✉️ support@monro.edu.vn</p>
+            <p>🕐 8:00 - 22:00 (Thứ 2 - Chủ Nhật)</p>
+        </div>
+        <div class="col right">
+            <h4>Theo Dõi Chúng Tôi:</h4>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div class="payment-methods">
+                <p style="margin-top: 15px; font-size: 12px; color: #666;">Phương Thức Thanh Toán:</p>
+                <div style="display: flex; gap: 10px; margin-top: 8px;">
+                    <i class="fab fa-cc-visa" style="font-size: 24px; color: #1a1f71;"></i>
+                    <i class="fab fa-cc-mastercard" style="font-size: 24px; color: #eb001b;"></i>
+                    <i class="fab fa-cc-paypal" style="font-size: 24px; color: #003087;"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

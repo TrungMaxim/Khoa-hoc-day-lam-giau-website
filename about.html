@@ -1,17 +1,329 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogpost - Monro</title>
+    <title>Về Chúng Tôi - Monro Học Viện Làm Giàu</title>
     <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome cho Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Font chữ viết tay cho Logo (tùy chọn) -->
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Spartan:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
 </head>
 <body>
-    <h1>WEBPAGE UNDER CONSTRUCTION</h1>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="header-left">
+            <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
+        </div>
+        <div class="header-center">
+            <h2>Về Chúng Tôi</h2>
+        </div>
+        <div class="header-right">
+            <a href="shop.html"><i class="fa-solid fa-graduation-cap" title="Khóa Học"></i></a>
+            <a href="cart.html" title="Cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </a>
+            <a href="account.html"><i class="fa-regular fa-user"></i></a>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h3>Monro</h3>
+            <button class="close-menu" id="close-menu">
+                <i class="fa-solid fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-menu-nav">
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Trang Chủ</span>
+            </a>
+            <a href="shop.html">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Khóa Học</span>
+            </a>
+            <a href="cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span>Giỏ Hàng</span>
+            </a>
+            <div class="menu-divider"></div>
+            <a href="account.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Tài Khoản</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Khóa Học Của Tôi</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-certificate"></i>
+                <span>Chứng Chỉ</span>
+            </a>
+            <div class="menu-divider"></div>
+            <a href="#">
+                <i class="fa-solid fa-circle-question"></i>
+                <span>Trợ Giúp</span>
+            </a>
+        </nav>
+        <div class="mobile-menu-footer">
+            <p>© 2026 Monro. All rights reserved.</p>
+            <div class="mobile-menu-social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Hero Section -->
+    <main class="about-page">
+        <nav class="breadcrumb">
+            <a href="index.html">Trang Chủ</a> / <span>Về Chúng Tôi</span>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="about-hero-content">
+                <h1>Học Viện Làm Giàu Monro</h1>
+                <p class="hero-slogan">"Tri thức dẫn lối thành công"</p>
+                <p class="hero-description">
+                    Chúng tôi là nền tảng đào tạo trực tuyến hàng đầu về tài chính, kinh doanh 
+                    và phát triển bản thân tại Việt Nam, với sứ mệnh mang tri thức làm giàu 
+                    đến với hàng triệu người Việt.
+                </p>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="about-section our-story">
+            <div class="container">
+                <div class="story-grid">
+                    <div class="story-image">
+                        <img src="src/logo/shop-logo.png" alt="Monro Logo">
+                    </div>
+                    <div class="story-content">
+                        <h2>Câu Chuyện Của Chúng Tôi</h2>
+                        <p>
+                            Monro được thành lập với niềm tin rằng <strong>tri thức là chìa khóa của sự thịnh vượng</strong>. 
+                            Chúng tôi bắt đầu từ một nhóm nhỏ những người đam mê tài chính và giáo dục, 
+                            với mong muốn democratize access to wealth-building knowledge.
+                        </p>
+                        <p>
+                            Trải qua hành trình phát triển, Monro tự hào đã đồng hành cùng hàng nghìn học viên 
+                            trên con đường chinh phục tự do tài chính. Mỗi câu chuyện thành công của học viên 
+                            là động lực để chúng tôi không ngừng cải thiện và phát triển.
+                        </p>
+                        <p>
+                            <strong>Từ Monro đến Make Rich</strong> - chúng tôi tin rằng làm giàu không chỉ là 
+                            kiếm tiền, mà là xây dựng một cuộc sống thịnh vượng về vật chất và phong phú về tinh thần.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision Section -->
+        <section class="about-section mission-vision">
+            <div class="container">
+                <div class="mv-grid">
+                    <div class="mv-card">
+                        <div class="mv-icon">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3>Sứ Mệnh</h3>
+                        <p>
+                            Mang tri thức làm giàu thực chiến đến với hàng triệu người Việt, 
+                            giúp họ xây dựng nền tảng tài chính vững chắc và đạt được tự do tài chính.
+                        </p>
+                    </div>
+                    <div class="mv-card">
+                        <div class="mv-icon">
+                            <i class="fa-solid fa-eye"></i>
+                        </div>
+                        <h3>Tầm Nhìn</h3>
+                        <p>
+                            Trở thành học viện đào tạo trực tuyến số 1 Việt Nam về lĩnh vực 
+                            tài chính cá nhân và kinh doanh, được công nhận trên toàn khu vực.
+                        </p>
+                    </div>
+                    <div class="mv-card">
+                        <div class="mv-icon">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <h3>Giá Trị Cốt Lõi</h3>
+                        <p>
+                            <strong>Chính trực - Chất lượng - Đổi mới - Tận tâm</strong>. 
+                            Chúng tôi cam kết mang đến những khóa học chất lượng nhất với 
+                            sự hỗ trợ tận tình cho mọi học viên.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instructors Section -->
+        <section class="about-section instructors">
+            <div class="container">
+                <h2 class="section-title-centered">Đội Ngũ Giảng Viên</h2>
+                <p class="section-subtitle-centered">Những chuyên gia hàng đầu trong lĩnh vực tài chính và kinh doanh</p>
+                
+                <div class="instructors-grid">
+                    <div class="instructor-card">
+                        <div class="instructor-img">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <h4>TS. Nguyễn Văn A</h4>
+                        <p class="instructor-role">Chuyên gia Tài chính</p>
+                        <p class="instructor-bio">
+                            15+ năm kinh nghiệm trong lĩnh vực đầu tư và quản lý tài chính. 
+                            Từng làm việc tại các tập đoàn đa quốc gia hàng đầu.
+                        </p>
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="instructor-card">
+                        <div class="instructor-img">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <h4>ThS. Trần Thị B</h4>
+                        <p class="instructor-role">Chuyên gia Kinh doanh</p>
+                        <p class="instructor-bio">
+                            Founder của 3 startup thành công. Chuyên gia về khởi nghiệp 
+                            và phát triển mô hình kinh doanh.
+                        </p>
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="instructor-card">
+                        <div class="instructor-img">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                        <h4>TS. Lê Văn C</h4>
+                        <p class="instructor-role">Chuyên gia Đầu tư</p>
+                        <p class="instructor-bio">
+                            Chuyên gia phân tích thị trường chứng khoán và bất động sản. 
+                            Tác giả của nhiều cuốn sách bestseller về đầu tư.
+                        </p>
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="instructor-card">
+                        <div class="instructor-img">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <h4>TS. Phạm Thị D</h4>
+                        <p class="instructor-role">Chuyên gia Phát triển Bản thân</p>
+                        <p class="instructor-bio">
+                            Coach quốc tế được chứng nhận. Đã đào tạo hàng nghìn học viên 
+                            về tư duy làm giàu và phát triển bản thân.
+                        </p>
+                        <div class="instructor-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="about-section stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Khóa Học</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10,000+</div>
+                        <div class="stat-label">Học Viên</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Giảng Viên</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Hài Lòng</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="about-section cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Bắt Đầu Hành Trình Làm Giàu Của Bạn</h2>
+                    <p>Khám phá các khóa học thực chiến của chúng tôi ngay hôm nay</p>
+                    <a href="shop.html" class="cta-btn">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        Xem Tất Cả Khóa Học
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="sketch-footer">
+        <div class="col">
+            <h4>Hỗ Trợ Học Viên</h4>
+            <a href="mailto:support@monro.edu.vn">Liên Hệ</a>
+            <a href="#">Hướng Dẫn Học Tập</a>
+            <a href="#">Điều Khoản Sử Dụng</a>
+            <a href="#">Câu Hỏi Thường Gặp</a>
+            <a href="#">Chính Sách Bảo Mật</a>
+        </div>
+        <div class="col">
+            <h4>Liên Kết Nhanh</h4>
+            <a href="shop.html">Tất Cả Khóa Học</a>
+            <a href="about.html">Về Chúng Tôi</a>
+            <a href="#">Blog Làm Giàu</a>
+            <a href="contact.html">Liên Hệ</a>
+            <a href="#">Chứng Chỉ</a>
+        </div>
+        <div class="col">
+            <h4>Thông Tin Liên Hệ</h4>
+            <p>📍 Tầng 15, Tòa nhà Tài Chính, Quận 1, TP.HCM</p>
+            <p>📞 1900 6789</p>
+            <p>✉️ support@monro.edu.vn</p>
+            <p>🕐 8:00 - 22:00 (Thứ 2 - Chủ Nhật)</p>
+        </div>
+        <div class="col right">
+            <h4>Theo Dõi Chúng Tôi:</h4>
+            <div class="icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-pinterest-p"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <div class="payment-methods">
+                <p style="margin-top: 15px; font-size: 12px; color: #666;">Phương Thức Thanh Toán:</p>
+                <div style="display: flex; gap: 10px; margin-top: 8px;">
+                    <i class="fab fa-cc-visa" style="font-size: 24px; color: #1a1f71;"></i>
+                    <i class="fab fa-cc-mastercard" style="font-size: 24px; color: #eb001b;"></i>
+                    <i class="fab fa-cc-paypal" style="font-size: 24px; color: #003087;"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

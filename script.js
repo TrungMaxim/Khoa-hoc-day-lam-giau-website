@@ -5,6 +5,7 @@ const products = {
         name: "Bí mật làm giàu của các tỷ phú",
         price: 599,
         image: "src/image-product/1.png",
+        category: "tai-chinh",
         description: "Khám phá những chiến lược đầu tư, tư duy tài chính và thói quen bí mật đã giúp nhiều tỷ phú xây dựng khối tài sản khổng lồ. Khóa học bao gồm 15 chương với các case study thực tế từ những tỷ phú tự thân hàng đầu thế giới."
     },
     2: {
@@ -12,6 +13,7 @@ const products = {
         name: "Thiên văn học và các làm giàu bí ẩn",
         price: 649,
         image: "src/image-product/2.png",
+        category: "kinh-doanh",
         description: "Cuốn sách bán chạy nhất và chuyên môn nhất về việc kết hợp chiêm tinh học và làm ăn hợp pháp. Học cách đọc vị thị trường qua các chu kỳ thiên văn và áp dụng vào đầu tư tài chính."
     },
     3: {
@@ -19,6 +21,7 @@ const products = {
         name: "Sổ tay về cách giao tiếp với người giàu ft. Xuân Tóc Đỏ",
         price: 399,
         image: "src/image-product/3.png",
+        category: "ky-nang-mem",
         description: "Một quyển sổ tay nhỏ giúp mọi người biết cách hòa nhập với giới thượng lưu. Khóa học dạy kỹ năng giao tiếp, networking và xây dựng mối quan hệ với giới tinh hoa."
     },
     4: {
@@ -26,6 +29,7 @@ const products = {
         name: "Giàu không khó khi ta chịu khó",
         price: 367,
         image: "src/image-product/4.png",
+        category: "phat-trien-ban-than",
         description: "Một quyển sách self-help cho những người đang gặp khó khăn tài chính. Lộ trình 90 ngày thay đổi tư duy và thói quen để đạt được tự do tài chính."
     },
     5: {
@@ -33,6 +37,7 @@ const products = {
         name: "Thói quen hằng ngày của giới tài phiệt",
         price: 499,
         image: "src/image-product/5.png",
+        category: "phat-trien-ban-than",
         description: "Từ cách quản lý thời gian, đọc sách đến suy nghĩ chiến lược, những thói quen đã giúp nhiều người thành công. Học 10 thói quen buổi sáng của các CEO hàng đầu."
     },
     6: {
@@ -40,6 +45,7 @@ const products = {
         name: "Mở rộng đời sống vật chất như mở rộng ví tiền",
         price: 799,
         image: "src/image-product/6.png",
+        category: "tai-chinh",
         description: "Hướng dẫn cách phát triển tư duy tài chính và tạo nhiều nguồn thu nhập để nâng cao chất lượng cuộc sống. Chiến lược xây dựng 7 nguồn thu nhập thụ động."
     },
     7: {
@@ -47,6 +53,7 @@ const products = {
         name: "Tết này con bận đi làm",
         price: 199,
         image: "src/image-product/7.png",
+        category: "phat-trien-ban-than",
         description: "Một câu chuyện ngắn về một tỷ phú tương lai thay vì về quê thì về công ty làm thêm giờ. Bài học về sự hy sinh và đánh đổi để đạt được thành công."
     },
     8: {
@@ -54,6 +61,7 @@ const products = {
         name: "Mặt dày nhưng ví cũng dày",
         price: 799,
         image: "src/image-product/8.png",
+        category: "phat-trien-ban-than",
         description: "Một quyển sách dành riêng cho những người sống cô độc nhưng muốn chứng minh cho cả thế giới thấy rằng mình vẫn có khả năng độc lập tài chính. Khóa học về resilience và mental toughness."
     },
     9: {
@@ -61,6 +69,7 @@ const products = {
         name: "(LIMITED EDITION) Từ điển bách khoa dành riêng cho giới tài phiệt",
         price: 1499,
         image: "src/image-product/9.png",
+        category: "tai-chinh",
         description: "Ấn bản giới hạn tổng hợp các thuật ngữ, chiến lược đầu tư, tư duy kinh doanh và câu chuyện của những người giàu có. Bộ khóa học cao cấp với 50+ video và tài liệu độc quyền."
     },
     10: {
@@ -68,6 +77,7 @@ const products = {
         name: "Bắt đầu một chặng đường dài chính là bước đi đầu tiên",
         price: 299,
         image: "src/image-product/10.png",
+        category: "phat-trien-ban-than",
         description: "Cuốn sách dành cho người mới bắt đầu học quản lý tài chính và xây dựng nền tảng kinh tế cá nhân. Lộ trình 12 tháng từ con số 0 đến tự do tài chính."
     },
     11: {
@@ -75,6 +85,7 @@ const products = {
         name: "Ánh sáng cuối con đường chính là gì với giới tài phiệt?",
         price: 459,
         image: "src/image-product/11.png",
+        category: "phat-trien-ban-than",
         description: "Khám phá mục tiêu thật sự của việc làm giàu: tự do tài chính, tầm ảnh hưởng và giá trị để lại cho xã hội. Khóa học về legacy building và philanthropy."
     },
     12: {
@@ -82,6 +93,7 @@ const products = {
         name: "Khi tiền trở thành công cụ chứ không phải mục tiêu",
         price: 529,
         image: "src/image-product/12.png",
+        category: "tai-chinh",
         description: "Giúp người đọc hiểu cách sử dụng tiền để tạo ra cơ hội, đầu tư cho bản thân và xây dựng tương lai bền vững. Tư duy đúng về tiền bạc và thịnh vượng."
     },
     13: {
@@ -89,6 +101,7 @@ const products = {
         name: "Những thương vụ thay đổi cuộc đời",
         price: 649,
         image: "src/image-product/13.png",
+        category: "kinh-doanh",
         description: "Phân tích các thương vụ kinh doanh nổi tiếng và những bài học tài chính đằng sau chúng. Case studies từ các startup kỳ lân và tập đoàn đa quốc gia."
     },
     14: {
@@ -96,6 +109,7 @@ const products = {
         name: "Tư duy của người giàu: Không phải ai cũng nhìn thấy cơ hội",
         price: 299,
         image: "src/image-product/14.png",
+        category: "phat-trien-ban-than",
         description: "So sánh sự khác biệt giữa tư duy tài chính của người giàu và người bình thường. 21 nguyên tắc tư duy làm giàu từ những người thành công nhất."
     },
     15: {
@@ -103,6 +117,7 @@ const products = {
         name: "Con đường đến tự do tài chính",
         price: 399,
         image: "src/image-product/15.png",
+        category: "tai-chinh",
         description: "Một lộ trình thực tế từ quản lý tiền bạc, đầu tư thông minh đến xây dựng tài sản lâu dài. Bản đồ chi tiết 5 năm đến tự do tài chính."
     }
 };
@@ -381,13 +396,232 @@ function showNotification(message, type = 'success') {
     }, 3000);
 }
 
+/* ===========================================
+   === WISHLIST MANAGEMENT SYSTEM ===
+   =========================================== */
+
+// Initialize wishlist from localStorage or empty array
+let wishlist = JSON.parse(localStorage.getItem('wishlist')) || [];
+
+// Save wishlist to localStorage
+function saveWishlist() {
+    localStorage.setItem('wishlist', JSON.stringify(wishlist));
+    updateWishlistButtons();
+}
+
+// Toggle wishlist (add/remove)
+function toggleWishlist(productId) {
+    const product = products[productId];
+    if (!product) {
+        alert('Sản phẩm không tồn tại!');
+        return;
+    }
+
+    const existingIndex = wishlist.findIndex(item => item.id === productId);
+    
+    if (existingIndex > -1) {
+        // Remove from wishlist
+        wishlist.splice(existingIndex, 1);
+        showNotification('Đã xóa khỏi danh sách yêu thích', 'info');
+    } else {
+        // Add to wishlist
+        wishlist.push({
+            id: productId,
+            name: product.name,
+            price: product.price,
+            image: product.image
+        });
+        showNotification('Đã thêm vào danh sách yêu thích!', 'success');
+    }
+
+    saveWishlist();
+    
+    // If on account page, re-render wishlist
+    if (document.querySelector('#wishlist-grid')) {
+        renderWishlist();
+    }
+}
+
+// Update wishlist buttons state (filled/empty heart)
+function updateWishlistButtons() {
+    document.querySelectorAll('.wishlist-btn').forEach(btn => {
+        // Get product ID from onclick attribute or data attribute
+        const onclick = btn.getAttribute('onclick');
+        const match = onclick.match(/toggleWishlist\((\d+)\)/);
+        if (match) {
+            const productId = parseInt(match[1]);
+            const isInWishlist = wishlist.some(item => item.id === productId);
+            
+            if (isInWishlist) {
+                btn.classList.add('active');
+                btn.querySelector('i').classList.remove('fa-regular');
+                btn.querySelector('i').classList.add('fa-solid');
+            } else {
+                btn.classList.remove('active');
+                btn.querySelector('i').classList.remove('fa-solid');
+                btn.querySelector('i').classList.add('fa-regular');
+            }
+        }
+    });
+}
+
+// Render wishlist in account page
+function renderWishlist() {
+    const wishlistGrid = document.getElementById('wishlist-grid');
+    const wishlistEmpty = document.getElementById('wishlist-empty');
+    
+    if (!wishlistGrid) return; // Not on account page
+    
+    if (wishlist.length === 0) {
+        wishlistGrid.style.display = 'none';
+        wishlistEmpty.style.display = 'block';
+        return;
+    }
+
+    wishlistEmpty.style.display = 'none';
+    wishlistGrid.style.display = 'grid';
+
+    wishlistGrid.innerHTML = wishlist.map(item => `
+        <div class="wishlist-item">
+            <div class="wishlist-item-img">
+                <img src="${item.image}" alt="${item.name}">
+                <button class="wishlist-item-remove" onclick="toggleWishlist(${item.id}); event.stopPropagation();">
+                    <i class="fa-solid fa-times"></i>
+                </button>
+            </div>
+            <div class="wishlist-item-info">
+                <h5>${item.name}</h5>
+                <p class="price">${formatPrice(item.price * 1000)}</p>
+                <div class="wishlist-item-actions">
+                    <button class="add-to-cart-btn" onclick="addToCart(${item.id}, 1)">
+                        <i class="fa-solid fa-cart-shopping"></i> Thêm Vào Giỏ
+                    </button>
+                    <button class="remove-wishlist-btn" onclick="toggleWishlist(${item.id})">
+                        <i class="fa-solid fa-trash"></i> Xóa
+                    </button>
+                </div>
+            </div>
+        </div>
+    `).join('');
+}
+
+// Initialize wishlist on page load
+function initWishlist() {
+    updateWishlistButtons();
+    renderWishlist();
+}
+
+/* ===========================================
+   === SHOP SEARCH & FILTER SYSTEM ===
+   =========================================== */
+
+// Category names mapping
+const categoryNames = {
+    'all': 'Tất Cả',
+    'tai-chinh': 'Tài Chính',
+    'kinh-doanh': 'Kinh Doanh',
+    'ky-nang-mem': 'Kỹ Năng Mềm',
+    'phat-trien-ban-than': 'Phát Triển Bản Thân'
+};
+
+// Render shop products with filter and search
+function renderShopProducts() {
+    const productsGrid = document.querySelector('.products-grid');
+    const searchInput = document.getElementById('search-input');
+    const categoryFilter = document.getElementById('category-filter');
+    const filterResults = document.querySelector('.filter-results');
+    
+    if (!productsGrid) return; // Not on shop page
+    
+    // Get search query and category filter
+    const searchQuery = searchInput ? searchInput.value.toLowerCase().trim() : '';
+    const selectedCategory = categoryFilter ? categoryFilter.value : 'all';
+    
+    // Filter products
+    let filteredProducts = Object.values(products).filter(product => {
+        const matchesSearch = product.name.toLowerCase().includes(searchQuery);
+        const matchesCategory = selectedCategory === 'all' || product.category === selectedCategory;
+        return matchesSearch && matchesCategory;
+    });
+    
+    // Update results count
+    if (filterResults) {
+        filterResults.innerHTML = `Hiển thị <strong>${filteredProducts.length}</strong> khóa học`;
+    }
+    
+    // Render products
+    if (filteredProducts.length === 0) {
+        productsGrid.innerHTML = `
+            <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px;">
+                <i class="fa-solid fa-magnifying-glass" style="font-size: 60px; color: #ddd; margin-bottom: 20px;"></i>
+                <h3 style="font-size: 20px; color: #666; margin-bottom: 10px;">Không tìm thấy khóa học nào</h3>
+                <p style="color: #999;">Thử tìm kiếm với từ khóa khác hoặc chọn danh mục khác</p>
+            </div>
+        `;
+        return;
+    }
+    
+    productsGrid.innerHTML = filteredProducts.map(product => `
+        <div class="product-card shop-item" onclick="window.location.href='sproduct.html?id=${product.id}'">
+            <button class="wishlist-btn" onclick="event.stopPropagation(); toggleWishlist(${product.id})">
+                <i class="fa-${wishlist.some(item => item.id === product.id) ? 'solid' : 'regular'} fa-heart${wishlist.some(item => item.id === product.id) ? ' active' : ''}"></i>
+            </button>
+            <div class="product-img">
+                <img src="${product.image}" alt="${product.name}">
+            </div>
+            <div class="product-info">
+                <h5>${product.name}</h5>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star${product.id % 2 === 0 ? '-half-alt' : ''}"></i>
+                </div>
+                <h4>${formatPrice(product.price * 1000)}</h4>
+                <button class="add-cart-btn" onclick="event.stopPropagation(); addToCart(${product.id}, 1)">Ghi Danh Ngay</button>
+            </div>
+        </div>
+    `).join('');
+    
+    // Re-bind wishlist button clicks
+    updateWishlistButtons();
+}
+
+// Initialize shop filters
+function initShopFilters() {
+    const searchInput = document.getElementById('search-input');
+    const categoryFilter = document.getElementById('category-filter');
+    
+    if (searchInput) {
+        searchInput.addEventListener('input', () => {
+            renderShopProducts();
+        });
+    }
+    
+    if (categoryFilter) {
+        categoryFilter.addEventListener('change', () => {
+            renderShopProducts();
+        });
+    }
+}
+
+
+
 // Initialize cart on page load
 document.addEventListener('DOMContentLoaded', function() {
     updateCartCount();
     renderCart();
-    
+
     // Initialize account page if on account.html
     initAccountPage();
+    
+    // Initialize wishlist
+    initWishlist();
+    
+    // Initialize shop filters if on shop page
+    initShopFilters();
+    renderShopProducts();
 
     // === MOBILE MENU FUNCTIONALITY ===
     const menuBtn = document.getElementById('menu-btn');
@@ -588,20 +822,24 @@ function saveSettings() {
 function setupAccountNav() {
     const navLinks = document.querySelectorAll('.account-nav a');
     const sections = document.querySelectorAll('.content-section');
-    
+
     navLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            
+
             // Update active state
             navLinks.forEach(l => l.classList.remove('active'));
             this.classList.add('active');
-            
+
             // Show corresponding section
             const target = this.getAttribute('href').substring(1);
             sections.forEach(section => {
                 if (section.id === target) {
                     section.style.display = 'block';
+                    // Render wishlist if opening wishlist tab
+                    if (target === 'wishlist') {
+                        renderWishlist();
+                    }
                 } else {
                     section.style.display = 'none';
                 }
