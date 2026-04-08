@@ -122,6 +122,60 @@ const products = {
     }
 };
 
+/* === COURSE DETAIL PAGE (chi-tiet.html) === */
+// Extended course list for detail/promo pages with promotional data
+const courses = [
+    { id: 1, name: "Mua 1 tặng 1", price: "1.200.000đ", img: "src/image-product/5.png", desc: "Những khóa học tư duy nền tảng nhất cho người mới bắt đầu" },
+    { id: 2, name: "Sắp khai giảng", price: "950.000đ", img: "src/image-product/1.png", desc: "Giảm ngay 50% khi đăng ký nhóm 3 người" },
+    { id: 3, name: "Kỹ năng mềm", price: "2.500.000đ", img: "src/image-product/6.png", desc: "Giảm 30% Kỹ năng mềm" },
+    { id: 4, name: "Tài chính", price: "1.500.000đ", img: "src/image-product/2.png", desc: "Thực chiến 100%" },
+    { id: 5, name: "Kinh doanh", price: "500.000đ", img: "src/image-product/3.png", desc: "Tư duy của tỉ phú" }
+];
+
+// Load course detail on chi-tiet.html
+function loadCourseDetail() {
+    const detailContent = document.getElementById('course-detail-content');
+    if (!detailContent) return; // Not on chi-tiet.html
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const courseId = parseInt(urlParams.get('id'));
+    const currentCourse = courses.find(c => c.id === courseId);
+
+    if (currentCourse) {
+        detailContent.innerHTML = `
+            <div class="detail-layout">
+                <div class="detail-image">
+                    <img src="${currentCourse.img}" alt="${currentCourse.name}">
+                </div>
+                <div class="detail-info">
+                    <h2>${currentCourse.name}</h2>
+                    <p>${currentCourse.desc}</p>
+                    <button class="btn-more" onclick="alert('Đã thêm vào giỏ hàng!')">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+        `;
+
+        // Render related courses (random 3 different from current)
+        const relatedGrid = document.getElementById('related-courses');
+        if (relatedGrid) {
+            const related = courses.filter(c => c.id !== courseId).slice(0, 3);
+            relatedGrid.innerHTML = related.map(c => `
+                <div class="course-card">
+                    <img src="${c.img}" alt="${c.name}" style="height: 18rem; object-fit: cover;">
+                    <h4 style="font-size: 1.2rem; margin: 0.8rem 0;">${c.name}</h4>
+                    <p class="price" style="font-size: 1rem;">${c.price}</p>
+                    <a href="chi-tiet.html?id=${c.id}" class="btn-more">Xem ngay</a>
+                </div>
+            `).join('');
+        }
+    } else {
+        detailContent.innerHTML = "<h2>Không tìm thấy khóa học! Vui lòng chọn từ trang chủ.</h2>";
+    }
+}
+
+// Run on page load
+document.addEventListener('DOMContentLoaded', loadCourseDetail);
+
 /* === LOAD PRODUCT DYNAMICALLY (for sproduct.html) === */
 function loadProduct() {
     // Chỉ chạy nếu đang ở trang sproduct.html (có element product-display)

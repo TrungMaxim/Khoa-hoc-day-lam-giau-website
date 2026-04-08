@@ -2,13 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
     --primary: #088178;
+    --accent: #f59e0b;
     --text-dark: #1a1a1a;
     --bg-light: #f5f5f5;
     --border-color: #cce7d0;
     --shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    --header-height: 70px;
 }
 
 * {
@@ -16,10 +22,16 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
 }
 
 body {
     width: 100%;
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    overflow-x: hidden;
 }
 
 .section-p1 {
@@ -679,6 +691,24 @@ body {
     font-weight: 800;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+}
+
+#banner3 .banner3-btn {
+    color: #ff4444;
+    font-weight: 800;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    padding: 0;
+    transition: 0.3s ease;
+}
+
+#banner3 .banner3-btn:hover {
+    color: #ff6666;
+    text-shadow: 0 0 8px rgba(255, 68, 68, 0.5);
 }
 
 /* Responsive for Banners */
@@ -4640,5 +4670,214 @@ header {
 
     .filter-results {
         font-size: 13px;
+    }
+}
+
+/* ============================================================
+   === MERGED STYLES FROM style1.css (Adapted) ===
+   ============================================================ */
+
+/* --- Alternate Header Styles (.main-header for other pages) --- */
+.main-header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    height: var(--header-height);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.user-nav {
+    display: flex;
+    gap: 30px;
+    margin-left: auto;
+}
+
+.user-nav a {
+    color: #000;
+    font-size: 1.4rem;
+}
+
+.user-nav a:hover {
+    color: var(--primary);
+    transform: scale(1.1);
+}
+
+/* --- Main Content Spacing --- */
+.main-content {
+    margin-top: calc(var(--header-height) + 40px);
+    padding-bottom: 50px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 3rem;
+}
+
+/* --- Course Grid Layout --- */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.course-card {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.course-card:hover {
+    transform: translateY(-1rem);
+}
+
+.course-card img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+.course-card h3 {
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 1rem 0;
+}
+
+/* --- Button Styles --- */
+.btn {
+    display: inline-block;
+    background: var(--primary);
+    color: #fff;
+    padding: .8rem 2rem;
+    border-radius: .5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--black);
+}
+
+.btn-more {
+    background: var(--primary);
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    display: inline-block;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-more:hover {
+    background: var(--black);
+    transform: translateX(5px);
+}
+
+/* --- Detail Layout (chi-tiet.html) --- */
+.detail-layout,
+.detail-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.detail-layout .detail-image,
+.detail-image {
+    flex: 0 0 40%;
+}
+
+.detail-layout .detail-image img,
+.detail-image img {
+    width: 100%;
+    max-height: 22rem;
+    object-fit: contain;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.detail-layout .detail-info,
+.detail-info {
+    flex: 1;
+}
+
+.detail-layout .detail-info h2,
+.detail-info h2 {
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+
+.detail-layout .detail-info p,
+.detail-info p {
+    font-size: 1.1rem;
+    color: var(--light-color);
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.detail-layout .detail-info .price,
+.detail-info .price {
+    font-size: 1.8rem;
+    color: #e11d48;
+    display: block;
+    margin-bottom: 25px;
+}
+
+/* --- Container (Centered Layout Alternative) --- */
+.container.centered {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* --- Mobile Responsive for Detail Layout --- */
+@media (max-width: 768px) {
+    .detail-wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .detail-layout {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .detail-layout .detail-image {
+        flex: 0 0 100%;
+    }
+
+    .detail-layout .detail-image img {
+        max-height: 18rem;
     }
 }

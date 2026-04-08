@@ -2,12 +2,12 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Danh sách Ưu đãi Khóa học</title>
+    <title>Chi tiết Khóa học</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
     <header class="main-header">
         <div class="header-left">
             <i class="fa-solid fa-bars" id="menu-btn"></i>
@@ -42,7 +42,7 @@
                 <i class="fa-solid fa-graduation-cap"></i>
                 <span>Khóa Học</span>
             </a>
-            <a href="uu-dai.html" class="active">
+            <a href="uu-dai.html">
                 <i class="fa-solid fa-tags"></i>
                 <span>Ưu Đãi</span>
             </a>
@@ -81,41 +81,18 @@
 
     <div class="container main-content">
         <nav class="breadcrumb">
-            <a href="index.html">Trang Chủ</a> / <span>Ưu Đãi</span>
+            <a href="index.html">Trang Chủ</a> / <a href="uu-dai.html">Ưu Đãi</a> / <span id="product-name-breadcrumb">Chi Tiết</span>
         </nav>
-        <h1>Danh sách Ưu đãi</h1> <br>
-        <div class="course-grid">
-            <div class="course-card">
-                <img src="src/image-product/5.png" alt="Web Frontend">
-                <h3>Mua 1 tặng 1</h3>
-                <p class="price">Những khóa học tư duy nền tảng nhất cho người mới</p>
-                <a href="chi-tiet.html?id=1" class="btn">Xem chi tiết</a>
+
+        <div id="course-detail-content">
             </div>
-            <div class="course-card">
-                <img src="src/image-product/1.png" alt="Board Game">
-                <h3>Sắp khai giảng</h3>
-                <p class="price">Giảm ngay 50% khi đăng ký nhóm 3 người</p>
-                <a href="chi-tiet.html?id=2" class="btn">Xem chi tiết</a>
-            </div>
-            <div class="course-card">
-                <img src="src/image-product/6.png" alt="English">
-                <h3>Kỹ năng mềm</h3>
-                <p class="price">Giảm 30% Kỹ năng mềm</p>
-                <a href="chi-tiet.html?id=3" class="btn">Xem chi tiết</a>
-            </div>
-            <div class="course-card">
-                <img src="src/image-product/2.png" alt="Marketing">
-                <h3>Tài chính</h3>
-                <p class="price">Thực chiến 100%</p>
-                <a href="chi-tiet.html?id=4" class="btn">Xem chi tiết</a>
-            </div>
-            <div class="course-card">
-                <img src="src/image-product/3.png" alt="KTPL">
-                <h3>Kinh doanh</h3>
-                <p class="price">Tư duy của tỉ phú</p>
-                <a href="chi-tiet.html?id=5" class="btn">Xem chi tiết</a>
-            </div>
+
+        <div class="related-section">
+            <h3>Các khóa học khác bạn sẽ thích</h3>
+            <div class="course-grid" id="related-courses"></div>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
