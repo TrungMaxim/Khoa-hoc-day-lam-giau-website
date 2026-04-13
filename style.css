@@ -4881,3 +4881,9 @@ header {
         max-height: 18rem;
     }
 }
+
+/* Ưu đãi page subtitle - smaller, not bold */
+.uu-dai-page .course-card .price {
+    font-size: 14px;
+    font-weight: 500;
+}
